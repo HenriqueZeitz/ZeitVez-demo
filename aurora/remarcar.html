@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Remarcar agendamento · Studio Aurora</title>
+  <meta name="description" content="Cortes, coloração e tratamentos para todos os tipos de cabelo, num espaço tranquilo na Vila Madalena. Agende online em menos de um minuto.">
+  <link rel="stylesheet" href="../assets/fontes.css">
+  <link rel="stylesheet" href="tema.css">
+  <link rel="stylesheet" href="../assets/vitrine.css">
+  <script defer src="../assets/telas.js"></script>
+  <script defer src="../assets/app.js"></script>
+</head>
+<body class="min-h-screen bg-fundo font-corpo text-texto antialiased" data-raiz="../">
+<a href="#conteudo" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:rounded-tema focus:bg-superficie focus:px-3 focus:py-2">Pular para o conteúdo</a>
+<header class="sticky top-0 z-40 border-b border-borda bg-fundo">
+  <div class="relative mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
+    <a href="index.html" class="flex min-w-0 items-center gap-3">
+      <span class="monograma">S</span>
+      <span class="titulo break-words text-lg sm:text-xl">Studio Aurora</span>
+    </a>
+    <nav class="hidden items-center gap-6 text-sm font-semibold lg:flex" aria-label="Principal">
+      <a href="index.html#sobre" class="text-suave hover:text-texto">Sobre</a>
+      <a href="index.html#horario" class="text-suave hover:text-texto">Horário</a>
+      <a href="index.html#contato" class="text-suave hover:text-texto">Contato</a>
+    </nav>
+    <div class="flex shrink-0 items-center gap-2">
+      <div class="hidden sm:block">
+        <div class="relative" data-menu-suspenso>
+            <button type="button" class="btn btn-fantasma btn-sm gap-2" aria-expanded="false" aria-haspopup="menu" aria-controls="menu-conta"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg> Olá, Alex <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+            <div id="menu-conta" role="menu" class="menu-suspenso" hidden>
+              <a role="menuitem" href="minha-conta.html">Minha conta</a>
+              <a role="menuitem" href="meus-agendamentos.html">Meus agendamentos</a>
+              <a role="menuitem" href="index.html">Sair</a>
+            </div>
+          </div>
+      </div>
+      <a href="agendar-profissional.html" class="btn btn-primario btn-sm hidden sm:inline-flex">Agendar horário</a>
+      <div class="lg:hidden">
+        <button type="button" class="btn btn-fantasma h-11 w-11 px-0" data-menu-botao aria-controls="menu-mobile" aria-expanded="false" aria-label="Abrir menu"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      </div>
+    </div>
+    <nav id="menu-mobile" hidden aria-label="Menu" class="absolute inset-x-0 top-full border-b border-borda bg-fundo px-4 pb-4 pt-2 shadow-sm lg:hidden">
+      <a href="agendar-profissional.html" class="btn btn-primario btn-bloco my-2">Agendar horário</a>
+      <ul>
+        <li><a href="index.html#sobre" class="block rounded-tema px-2 py-3 font-semibold hover:bg-superficie-2">Sobre</a></li>
+        <li><a href="index.html#horario" class="block rounded-tema px-2 py-3 font-semibold hover:bg-superficie-2">Horário</a></li>
+        <li><a href="index.html#contato" class="block rounded-tema px-2 py-3 font-semibold hover:bg-superficie-2">Contato</a></li>
+        <li><a href="minha-conta.html" class="block rounded-tema px-2 py-3 font-semibold hover:bg-superficie-2">Minha conta</a></li>
+        <li><a href="meus-agendamentos.html" class="block rounded-tema px-2 py-3 font-semibold hover:bg-superficie-2">Meus agendamentos</a></li>
+        <li><a href="index.html" class="block w-full rounded-tema px-2 py-3 text-left font-semibold hover:bg-superficie-2">Sair</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="conteudo" tabindex="-1" class="outline-none">
+
+<div class="mx-auto w-full max-w-3xl px-4 pb-16 pt-8 sm:px-6 sm:pt-12">
+  <h1 class="titulo text-3xl sm:text-4xl">Remarcar agendamento</h1>
+  <p class="mt-1">Atual: Corte e finalização, quarta-feira, 21 de outubro, às 15:00, com Marina Costa.</p>
+  <div class="mt-6" data-seletor-dia>
+    <div role="group" aria-label="Dia" class="flex flex-wrap gap-2">
+      <button type="button" class="chip" aria-pressed="false" data-painel="dia-0">ter., 20 out</button>
+      <button type="button" class="chip" aria-pressed="true" data-painel="dia-1">qua., 21 out</button>
+      <button type="button" class="chip" aria-pressed="false" data-painel="dia-3">sex., 23 out</button>
+      <button type="button" class="chip" aria-pressed="false" data-painel="dia-4">sáb., 24 out</button>
+      <button type="button" class="chip" aria-pressed="false" data-painel="dia-7">ter., 27 out</button>
+      <button type="button" class="chip" aria-pressed="false" data-painel="dia-8">qua., 28 out</button>
+      <button type="button" class="chip" aria-pressed="false" data-painel="dia-9">qui., 29 out</button>
+      <button type="button" class="chip" aria-pressed="false" data-painel="dia-10">sex., 30 out</button>
+      <button type="button" class="chip" aria-pressed="false" data-painel="dia-11">sáb., 31 out</button>
+    </div>
+    <div id="dia-0" data-painel-dia hidden>
+    <h2 class="titulo mt-8 text-xl first-letter:uppercase">terça-feira, 20 de outubro</h2>
+    <ul class="mt-4 grid grid-cols-3 gap-2 sm:grid-cols-4 md:grid-cols-5">
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="15:30, terça-feira, 20 de outubro">15:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="15:45, terça-feira, 20 de outubro">15:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="16:00, terça-feira, 20 de outubro">16:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="16:15, terça-feira, 20 de outubro">16:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="16:30, terça-feira, 20 de outubro">16:30</a></li>
+    </ul>
+  </div>
+    <div id="dia-1" data-painel-dia>
+    <h2 class="titulo mt-8 text-xl first-letter:uppercase">quarta-feira, 21 de outubro</h2>
+    <ul class="mt-4 grid grid-cols-3 gap-2 sm:grid-cols-4 md:grid-cols-5">
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:00, quarta-feira, 21 de outubro">09:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:15, quarta-feira, 21 de outubro">09:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:30, quarta-feira, 21 de outubro">09:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:45, quarta-feira, 21 de outubro">09:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:00, quarta-feira, 21 de outubro">10:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:15, quarta-feira, 21 de outubro">10:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:30, quarta-feira, 21 de outubro">10:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:45, quarta-feira, 21 de outubro">10:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="11:00, quarta-feira, 21 de outubro">11:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:00, quarta-feira, 21 de outubro">13:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:15, quarta-feira, 21 de outubro">13:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:30, quarta-feira, 21 de outubro">13:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:45, quarta-feira, 21 de outubro">13:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="14:00, quarta-feira, 21 de outubro">14:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario atual" aria-label="15:00, quarta-feira, 21 de outubro">15:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="16:00, quarta-feira, 21 de outubro">16:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="16:15, quarta-feira, 21 de outubro">16:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="16:30, quarta-feira, 21 de outubro">16:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="16:45, quarta-feira, 21 de outubro">16:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="17:00, quarta-feira, 21 de outubro">17:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="17:15, quarta-feira, 21 de outubro">17:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="17:30, quarta-feira, 21 de outubro">17:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="17:45, quarta-feira, 21 de outubro">17:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="18:00, quarta-feira, 21 de outubro">18:00</a></li>
+    </ul>
+  </div>
+    <div id="dia-3" data-painel-dia hidden>
+    <h2 class="titulo mt-8 text-xl first-letter:uppercase">sexta-feira, 23 de outubro</h2>
+    <ul class="mt-4 grid grid-cols-3 gap-2 sm:grid-cols-4 md:grid-cols-5">
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:00, sexta-feira, 23 de outubro">09:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:15, sexta-feira, 23 de outubro">09:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:30, sexta-feira, 23 de outubro">09:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:45, sexta-feira, 23 de outubro">09:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:00, sexta-feira, 23 de outubro">10:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:15, sexta-feira, 23 de outubro">10:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:30, sexta-feira, 23 de outubro">10:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:45, sexta-feira, 23 de outubro">10:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="11:00, sexta-feira, 23 de outubro">11:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:00, sexta-feira, 23 de outubro">13:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:15, sexta-feira, 23 de outubro">13:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:30, sexta-feira, 23 de outubro">13:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:45, sexta-feira, 23 de outubro">13:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="14:00, sexta-feira, 23 de outubro">14:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="14:15, sexta-feira, 23 de outubro">14:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="14:30, sexta-feira, 23 de outubro">14:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="14:45, sexta-feira, 23 de outubro">14:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="15:00, sexta-feira, 23 de outubro">15:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="15:15, sexta-feira, 23 de outubro">15:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="15:30, sexta-feira, 23 de outubro">15:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="15:45, sexta-feira, 23 de outubro">15:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="16:00, sexta-feira, 23 de outubro">16:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="16:15, sexta-feira, 23 de outubro">16:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="16:30, sexta-feira, 23 de outubro">16:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="16:45, sexta-feira, 23 de outubro">16:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="17:00, sexta-feira, 23 de outubro">17:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="17:15, sexta-feira, 23 de outubro">17:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="17:30, sexta-feira, 23 de outubro">17:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="17:45, sexta-feira, 23 de outubro">17:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="18:00, sexta-feira, 23 de outubro">18:00</a></li>
+    </ul>
+  </div>
+    <div id="dia-4" data-painel-dia hidden>
+    <h2 class="titulo mt-8 text-xl first-letter:uppercase">sábado, 24 de outubro</h2>
+    <ul class="mt-4 grid grid-cols-3 gap-2 sm:grid-cols-4 md:grid-cols-5">
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:00, sábado, 24 de outubro">09:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:15, sábado, 24 de outubro">09:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:30, sábado, 24 de outubro">09:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:45, sábado, 24 de outubro">09:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:00, sábado, 24 de outubro">10:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:15, sábado, 24 de outubro">10:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:30, sábado, 24 de outubro">10:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:45, sábado, 24 de outubro">10:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="11:00, sábado, 24 de outubro">11:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:00, sábado, 24 de outubro">13:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:15, sábado, 24 de outubro">13:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:30, sábado, 24 de outubro">13:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:45, sábado, 24 de outubro">13:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="14:00, sábado, 24 de outubro">14:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="14:15, sábado, 24 de outubro">14:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="14:30, sábado, 24 de outubro">14:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="14:45, sábado, 24 de outubro">14:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="15:00, sábado, 24 de outubro">15:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="15:15, sábado, 24 de outubro">15:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="15:30, sábado, 24 de outubro">15:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="15:45, sábado, 24 de outubro">15:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="16:00, sábado, 24 de outubro">16:00</a></li>
+    </ul>
+  </div>
+    <div id="dia-7" data-painel-dia hidden>
+    <h2 class="titulo mt-8 text-xl first-letter:uppercase">terça-feira, 27 de outubro</h2>
+    <ul class="mt-4 grid grid-cols-3 gap-2 sm:grid-cols-4 md:grid-cols-5">
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:00, terça-feira, 27 de outubro">09:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:15, terça-feira, 27 de outubro">09:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:30, terça-feira, 27 de outubro">09:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:45, terça-feira, 27 de outubro">09:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:00, terça-feira, 27 de outubro">10:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:15, terça-feira, 27 de outubro">10:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:30, terça-feira, 27 de outubro">10:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:45, terça-feira, 27 de outubro">10:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="11:00, terça-feira, 27 de outubro">11:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:00, terça-feira, 27 de outubro">13:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:15, terça-feira, 27 de outubro">13:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:30, terça-feira, 27 de outubro">13:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:45, terça-feira, 27 de outubro">13:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="14:00, terça-feira, 27 de outubro">14:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="14:15, terça-feira, 27 de outubro">14:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="14:30, terça-feira, 27 de outubro">14:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="14:45, terça-feira, 27 de outubro">14:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="15:00, terça-feira, 27 de outubro">15:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="15:15, terça-feira, 27 de outubro">15:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="15:30, terça-feira, 27 de outubro">15:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="15:45, terça-feira, 27 de outubro">15:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="16:00, terça-feira, 27 de outubro">16:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="16:15, terça-feira, 27 de outubro">16:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="16:30, terça-feira, 27 de outubro">16:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="16:45, terça-feira, 27 de outubro">16:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="17:00, terça-feira, 27 de outubro">17:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="17:15, terça-feira, 27 de outubro">17:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="17:30, terça-feira, 27 de outubro">17:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="17:45, terça-feira, 27 de outubro">17:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="18:00, terça-feira, 27 de outubro">18:00</a></li>
+    </ul>
+  </div>
+    <div id="dia-8" data-painel-dia hidden>
+    <h2 class="titulo mt-8 text-xl first-letter:uppercase">quarta-feira, 28 de outubro</h2>
+    <ul class="mt-4 grid grid-cols-3 gap-2 sm:grid-cols-4 md:grid-cols-5">
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:00, quarta-feira, 28 de outubro">09:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:15, quarta-feira, 28 de outubro">09:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:30, quarta-feira, 28 de outubro">09:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:45, quarta-feira, 28 de outubro">09:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:00, quarta-feira, 28 de outubro">10:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:15, quarta-feira, 28 de outubro">10:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:30, quarta-feira, 28 de outubro">10:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:45, quarta-feira, 28 de outubro">10:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="11:00, quarta-feira, 28 de outubro">11:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:00, quarta-feira, 28 de outubro">13:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:15, quarta-feira, 28 de outubro">13:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:30, quarta-feira, 28 de outubro">13:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:45, quarta-feira, 28 de outubro">13:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="14:00, quarta-feira, 28 de outubro">14:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="14:15, quarta-feira, 28 de outubro">14:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="14:30, quarta-feira, 28 de outubro">14:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="14:45, quarta-feira, 28 de outubro">14:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="15:00, quarta-feira, 28 de outubro">15:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="15:15, quarta-feira, 28 de outubro">15:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="15:30, quarta-feira, 28 de outubro">15:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="15:45, quarta-feira, 28 de outubro">15:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="16:00, quarta-feira, 28 de outubro">16:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="16:15, quarta-feira, 28 de outubro">16:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="16:30, quarta-feira, 28 de outubro">16:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="16:45, quarta-feira, 28 de outubro">16:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="17:00, quarta-feira, 28 de outubro">17:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="17:15, quarta-feira, 28 de outubro">17:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="17:30, quarta-feira, 28 de outubro">17:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="17:45, quarta-feira, 28 de outubro">17:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="18:00, quarta-feira, 28 de outubro">18:00</a></li>
+    </ul>
+  </div>
+    <div id="dia-9" data-painel-dia hidden>
+    <h2 class="titulo mt-8 text-xl first-letter:uppercase">quinta-feira, 29 de outubro</h2>
+    <ul class="mt-4 grid grid-cols-3 gap-2 sm:grid-cols-4 md:grid-cols-5">
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:00, quinta-feira, 29 de outubro">09:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:15, quinta-feira, 29 de outubro">09:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:30, quinta-feira, 29 de outubro">09:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:45, quinta-feira, 29 de outubro">09:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:00, quinta-feira, 29 de outubro">10:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:15, quinta-feira, 29 de outubro">10:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:30, quinta-feira, 29 de outubro">10:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:45, quinta-feira, 29 de outubro">10:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="11:00, quinta-feira, 29 de outubro">11:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:00, quinta-feira, 29 de outubro">13:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:15, quinta-feira, 29 de outubro">13:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:30, quinta-feira, 29 de outubro">13:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:45, quinta-feira, 29 de outubro">13:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="14:00, quinta-feira, 29 de outubro">14:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="14:15, quinta-feira, 29 de outubro">14:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="14:30, quinta-feira, 29 de outubro">14:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="14:45, quinta-feira, 29 de outubro">14:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="15:00, quinta-feira, 29 de outubro">15:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="15:15, quinta-feira, 29 de outubro">15:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="15:30, quinta-feira, 29 de outubro">15:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="15:45, quinta-feira, 29 de outubro">15:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="16:00, quinta-feira, 29 de outubro">16:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="16:15, quinta-feira, 29 de outubro">16:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="16:30, quinta-feira, 29 de outubro">16:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="16:45, quinta-feira, 29 de outubro">16:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="17:00, quinta-feira, 29 de outubro">17:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="17:15, quinta-feira, 29 de outubro">17:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="17:30, quinta-feira, 29 de outubro">17:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="17:45, quinta-feira, 29 de outubro">17:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="18:00, quinta-feira, 29 de outubro">18:00</a></li>
+    </ul>
+  </div>
+    <div id="dia-10" data-painel-dia hidden>
+    <h2 class="titulo mt-8 text-xl first-letter:uppercase">sexta-feira, 30 de outubro</h2>
+    <ul class="mt-4 grid grid-cols-3 gap-2 sm:grid-cols-4 md:grid-cols-5">
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:00, sexta-feira, 30 de outubro">09:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:15, sexta-feira, 30 de outubro">09:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:30, sexta-feira, 30 de outubro">09:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:45, sexta-feira, 30 de outubro">09:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:00, sexta-feira, 30 de outubro">10:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:15, sexta-feira, 30 de outubro">10:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:30, sexta-feira, 30 de outubro">10:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:45, sexta-feira, 30 de outubro">10:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="11:00, sexta-feira, 30 de outubro">11:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:00, sexta-feira, 30 de outubro">13:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:15, sexta-feira, 30 de outubro">13:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:30, sexta-feira, 30 de outubro">13:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:45, sexta-feira, 30 de outubro">13:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="14:00, sexta-feira, 30 de outubro">14:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="14:15, sexta-feira, 30 de outubro">14:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="14:30, sexta-feira, 30 de outubro">14:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="14:45, sexta-feira, 30 de outubro">14:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="15:00, sexta-feira, 30 de outubro">15:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="15:15, sexta-feira, 30 de outubro">15:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="15:30, sexta-feira, 30 de outubro">15:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="15:45, sexta-feira, 30 de outubro">15:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="16:00, sexta-feira, 30 de outubro">16:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="16:15, sexta-feira, 30 de outubro">16:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="16:30, sexta-feira, 30 de outubro">16:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="16:45, sexta-feira, 30 de outubro">16:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="17:00, sexta-feira, 30 de outubro">17:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="17:15, sexta-feira, 30 de outubro">17:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="17:30, sexta-feira, 30 de outubro">17:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="17:45, sexta-feira, 30 de outubro">17:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="18:00, sexta-feira, 30 de outubro">18:00</a></li>
+    </ul>
+  </div>
+    <div id="dia-11" data-painel-dia hidden>
+    <h2 class="titulo mt-8 text-xl first-letter:uppercase">sábado, 31 de outubro</h2>
+    <ul class="mt-4 grid grid-cols-3 gap-2 sm:grid-cols-4 md:grid-cols-5">
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:00, sábado, 31 de outubro">09:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:15, sábado, 31 de outubro">09:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:30, sábado, 31 de outubro">09:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="09:45, sábado, 31 de outubro">09:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:00, sábado, 31 de outubro">10:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:15, sábado, 31 de outubro">10:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:30, sábado, 31 de outubro">10:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="10:45, sábado, 31 de outubro">10:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="11:00, sábado, 31 de outubro">11:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:00, sábado, 31 de outubro">13:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:15, sábado, 31 de outubro">13:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:30, sábado, 31 de outubro">13:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="13:45, sábado, 31 de outubro">13:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="14:00, sábado, 31 de outubro">14:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="14:15, sábado, 31 de outubro">14:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="14:30, sábado, 31 de outubro">14:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="14:45, sábado, 31 de outubro">14:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="15:00, sábado, 31 de outubro">15:00</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="15:15, sábado, 31 de outubro">15:15</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="15:30, sábado, 31 de outubro">15:30</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="15:45, sábado, 31 de outubro">15:45</a></li>
+      <li><a href="meus-agendamentos.html?remarcado=1" class="horario" aria-label="16:00, sábado, 31 de outubro">16:00</a></li>
+    </ul>
+  </div>
+  </div>
+  <a href="meus-agendamentos.html" class="btn btn-secundario mt-10">Voltar para meus agendamentos</a>
+</div>
+</main>
+
+<footer class="mt-16 border-t border-borda bg-superficie">
+  <div class="mx-auto grid max-w-6xl gap-8 px-4 py-10 sm:grid-cols-2 sm:px-6 lg:grid-cols-3">
+    <div>
+      <div class="flex items-center gap-3"><span class="monograma">S</span><span class="titulo break-words text-lg">Studio Aurora</span></div>
+      <p class="mt-3 text-sm text-suave">Cabelo, cor e cuidado — sem pressa.</p>
+    </div>
+    <div class="text-sm">
+      <h2 class="titulo mb-3 text-base">Endereço</h2>
+      <p class="text-suave">Rua das Acácias, 120 — Vila Madalena, São Paulo - SP</p>
+    </div>
+    <div class="text-sm">
+      <h2 class="titulo mb-3 text-base">Horário</h2>
+      <ul class="space-y-1 text-suave">
+        <li class="flex justify-between gap-4"><span>Segunda</span><span class="num">Fechado</span></li>
+        <li class="flex justify-between gap-4"><span>Terça a sexta</span><span class="num">9h às 19h</span></li>
+        <li class="flex justify-between gap-4"><span>Sábado</span><span class="num">9h às 17h</span></li>
+        <li class="flex justify-between gap-4"><span>Domingo</span><span class="num">Fechado</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-borda">
+    <div class="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-5 text-xs text-suave sm:flex-row sm:items-center sm:justify-between sm:px-6">
+      <span>© 2026 Studio Aurora</span>
+      <nav aria-label="Informações legais" class="flex flex-wrap items-center gap-x-4">
+        <a href="termos.html" class="inline-flex min-h-11 items-center text-sm underline-offset-4 hover:text-texto hover:underline">Termos de uso</a>
+        <a href="privacidade.html" class="inline-flex min-h-11 items-center text-sm underline-offset-4 hover:text-texto hover:underline">Política de privacidade</a>
+      </nav>
+      <span class="font-semibold">Feito com ZeitVez</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

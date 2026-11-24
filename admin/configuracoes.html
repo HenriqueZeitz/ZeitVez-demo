@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Configurações · ZeitVez Admin</title>
+  <script>try{var t=localStorage.getItem('zeitvez-tema');if(t)document.documentElement.dataset.tema=t}catch(e){}</script>
+  <link rel="stylesheet" href="../assets/fontes.css">
+  <link rel="stylesheet" href="../assets/zeitvez.css">
+  <link rel="stylesheet" href="../assets/vitrine.css">
+  <script defer src="../assets/telas.js"></script>
+  <script defer src="../assets/app.js"></script>
+</head>
+<body class="min-h-screen bg-fundo font-corpo text-texto antialiased" data-raiz="../">
+<a href="#conteudo" class="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-50 focus:rounded-tema focus:bg-fundo focus:px-4 focus:py-2 focus:font-semibold focus:text-texto focus:shadow-lg">Pular para o conteúdo</a>
+<header class="border-b border-borda bg-fundo">
+  <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-6 gap-y-2 px-4 py-3 sm:px-6">
+    <div class="flex items-center gap-6">
+      <a href="index.html" class="flex items-center gap-2.5">
+        <span class="inline-flex h-9 w-9 items-center justify-center rounded-tema bg-primaria text-sobre-primaria"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/><path d="M19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg></span>
+        <span class="titulo whitespace-nowrap text-lg">ZeitVez Admin</span>
+      </a>
+      <nav aria-label="Painel" class="flex items-center gap-4">
+        <a href="index.html" class="inline-flex min-h-11 items-center text-sm font-semibold text-primaria underline-offset-4 hover:underline">Salões</a>
+        <a href="configuracoes.html" class="inline-flex min-h-11 items-center text-sm font-semibold text-primaria underline-offset-4 hover:underline">Configurações</a>
+      </nav>
+    </div>
+    <a href="../index.html" class="btn btn-secundario gap-2 px-4"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h10"/></svg> Sair</a>
+  </div>
+</header>
+<main id="conteudo" tabindex="-1" class="mx-auto w-full max-w-6xl px-4 pb-16 pt-8 outline-none sm:px-6 sm:pt-10">
+
+<div class="mx-auto max-w-2xl">
+  <a href="index.html" class="inline-flex min-h-11 items-center text-sm font-semibold text-primaria underline-offset-4 hover:underline">← Voltar para os salões</a>
+  <h1 class="titulo mt-3 text-3xl sm:text-4xl">Configurações</h1>
+  <p class="mt-1 text-suave">Regras que valem para todos os salões.</p>
+  <div class="mt-8 rounded-xl border border-borda bg-superficie p-5 sm:p-7">
+    <form class="space-y-5" action="configuracoes.html" data-ir-aviso novalidate>
+      <div class="space-y-1.5">
+        <label for="meses" class="campo-rotulo !mb-0">Meses suspenso até cancelar</label>
+        <input id="meses" name="monthsUntilCancellation" type="text" inputmode="numeric" autocomplete="off" value="6" class="campo" aria-describedby="meses-ajuda">
+        <p id="meses-ajuda" class="text-sm text-suave">De 1 a 24 meses. Todo dia o sistema cancela os salões suspensos há mais tempo que este prazo (a contagem começa quando o salão foi suspenso). Se você diminuir o prazo, os salões que já passaram dele serão cancelados na próxima execução.</p>
+      </div>
+      <button type="submit" class="btn btn-primario">Salvar configurações</button>
+    </form>
+  </div>
+</div>
+</main>
+</body>
+</html>

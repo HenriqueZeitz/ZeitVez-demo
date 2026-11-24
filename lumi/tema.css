@@ -1,0 +1,50 @@
+/* Espaço Lumi — Tema claro · paleta fria · sem serifa.
+   Este bloco é o "tema" do tenant: o layout é o mesmo para todos, só estas variáveis mudam. */
+:root {
+  --fonte-titulo: 'Manrope', system-ui, sans-serif;
+  --fonte-corpo: 'Manrope', system-ui, sans-serif;
+  --esquema: light;
+  --cor-fundo: #F0F8FB;
+  --cor-superficie: #FFFFFF;
+  --cor-superficie-2: #E2F0F4;
+  --cor-campo: #FFFFFF;
+  --cor-texto: #112227;
+  --cor-texto-suave: #455D63;
+  --cor-borda: #D0E2E6;
+  --cor-borda-forte: #A9C3CA;
+  --cor-primaria: #0D7285;
+  --cor-primaria-forte: #0D7285;
+  --cor-primaria-suave: #DDEBEE;
+  --cor-sobre-primaria: #FFFFFF;
+  --cor-secundaria: #7C83E8;
+  --cor-foco: #0D7285;
+  --cor-foto-1: #A1C9D2;
+  --cor-foto-2: #0D7285;
+  --cor-foto-3: #C2C9F3;
+  --cor-foto-texto: #FFFFFF;
+  --cor-sucesso-fundo: #E6F4EA;
+  --cor-sucesso-texto: #1B6B38;
+  --cor-sucesso-borda: #BEDFC9;
+  --cor-alerta-fundo: #FFF4DB;
+  --cor-alerta-texto: #855600;
+  --cor-alerta-borda: #EFD79C;
+  --cor-erro-fundo: #FCE9E7;
+  --cor-erro-texto: #A1251A;
+  --cor-erro-borda: #EFC3BD;
+  --cor-azul-fundo: #E6EEFB;
+  --cor-azul-texto: #1D4E9E;
+  --cor-azul-borda: #BCD0F0;
+  --cor-roxo-fundo: #F1EAFB;
+  --cor-roxo-texto: #5B2D9E;
+  --cor-roxo-borda: #D9C6F2;
+  --titulo-caixa: none;
+  --titulo-espaco: -0.02em;
+  --titulo-peso: 800;
+  --botao-caixa: none;
+  --botao-espaco: normal;
+  --raio: 12px;
+  --raio-grande: 16px;
+  --raio-botao: 12px;
+  --raio-avatar: 14px;
+  --sombra: 0 1px 2px rgba(14,36,48,.04), 0 8px 24px rgba(14,36,48,.06);
+}

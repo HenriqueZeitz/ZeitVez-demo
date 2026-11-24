@@ -1,0 +1,9 @@
+{
+  "name": "zeitvez-prototipo-gerador",
+  "private": true,
+  "description": "Gerador da vitrine (prototipo/). Só o Tailwind, para compilar assets/vitrine.css.",
+  "type": "module",
+  "devDependencies": {
+    "tailwindcss": "3.4.16"
+  }
+}

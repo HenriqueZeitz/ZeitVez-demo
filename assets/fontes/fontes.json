@@ -1,0 +1,374 @@
+[
+ {
+  "familia": "Barlow",
+  "estilo": "normal",
+  "peso": 400,
+  "arquivo": "barlow-normal-400.woff2"
+ },
+ {
+  "familia": "Barlow",
+  "estilo": "normal",
+  "peso": 500,
+  "arquivo": "barlow-normal-500.woff2"
+ },
+ {
+  "familia": "Barlow",
+  "estilo": "normal",
+  "peso": 600,
+  "arquivo": "barlow-normal-600.woff2"
+ },
+ {
+  "familia": "Barlow",
+  "estilo": "normal",
+  "peso": 700,
+  "arquivo": "barlow-normal-700.woff2"
+ },
+ {
+  "familia": "Barlow Condensed",
+  "estilo": "normal",
+  "peso": 500,
+  "arquivo": "barlow-condensed-normal-500.woff2"
+ },
+ {
+  "familia": "Barlow Condensed",
+  "estilo": "normal",
+  "peso": 600,
+  "arquivo": "barlow-condensed-normal-600.woff2"
+ },
+ {
+  "familia": "Barlow Condensed",
+  "estilo": "normal",
+  "peso": 700,
+  "arquivo": "barlow-condensed-normal-700.woff2"
+ },
+ {
+  "familia": "Cormorant Garamond",
+  "estilo": "normal",
+  "peso": 500,
+  "arquivo": "cormorant-garamond-normal-500.woff2"
+ },
+ {
+  "familia": "Cormorant Garamond",
+  "estilo": "normal",
+  "peso": 600,
+  "arquivo": "cormorant-garamond-normal-500.woff2"
+ },
+ {
+  "familia": "Cormorant Garamond",
+  "estilo": "normal",
+  "peso": 700,
+  "arquivo": "cormorant-garamond-normal-500.woff2"
+ },
+ {
+  "familia": "Fraunces",
+  "estilo": "normal",
+  "peso": 500,
+  "arquivo": "fraunces-normal-500.woff2"
+ },
+ {
+  "familia": "Fraunces",
+  "estilo": "normal",
+  "peso": 600,
+  "arquivo": "fraunces-normal-500.woff2"
+ },
+ {
+  "familia": "Fraunces",
+  "estilo": "normal",
+  "peso": 700,
+  "arquivo": "fraunces-normal-500.woff2"
+ },
+ {
+  "familia": "Fraunces",
+  "estilo": "normal",
+  "peso": 800,
+  "arquivo": "fraunces-normal-500.woff2"
+ },
+ {
+  "familia": "Inter",
+  "estilo": "normal",
+  "peso": 400,
+  "arquivo": "inter-normal-400.woff2"
+ },
+ {
+  "familia": "Inter",
+  "estilo": "normal",
+  "peso": 500,
+  "arquivo": "inter-normal-400.woff2"
+ },
+ {
+  "familia": "Inter",
+  "estilo": "normal",
+  "peso": 600,
+  "arquivo": "inter-normal-400.woff2"
+ },
+ {
+  "familia": "Inter",
+  "estilo": "normal",
+  "peso": 700,
+  "arquivo": "inter-normal-400.woff2"
+ },
+ {
+  "familia": "Josefin Sans",
+  "estilo": "normal",
+  "peso": 500,
+  "arquivo": "josefin-sans-normal-500.woff2"
+ },
+ {
+  "familia": "Josefin Sans",
+  "estilo": "normal",
+  "peso": 600,
+  "arquivo": "josefin-sans-normal-500.woff2"
+ },
+ {
+  "familia": "Josefin Sans",
+  "estilo": "normal",
+  "peso": 700,
+  "arquivo": "josefin-sans-normal-500.woff2"
+ },
+ {
+  "familia": "Lato",
+  "estilo": "normal",
+  "peso": 400,
+  "arquivo": "lato-normal-400.woff2"
+ },
+ {
+  "familia": "Lato",
+  "estilo": "normal",
+  "peso": 700,
+  "arquivo": "lato-normal-700.woff2"
+ },
+ {
+  "familia": "Libre Baskerville",
+  "estilo": "normal",
+  "peso": 400,
+  "arquivo": "libre-baskerville-normal-400.woff2"
+ },
+ {
+  "familia": "Libre Baskerville",
+  "estilo": "normal",
+  "peso": 700,
+  "arquivo": "libre-baskerville-normal-400.woff2"
+ },
+ {
+  "familia": "Manrope",
+  "estilo": "normal",
+  "peso": 400,
+  "arquivo": "manrope-normal-400.woff2"
+ },
+ {
+  "familia": "Manrope",
+  "estilo": "normal",
+  "peso": 500,
+  "arquivo": "manrope-normal-400.woff2"
+ },
+ {
+  "familia": "Manrope",
+  "estilo": "normal",
+  "peso": 600,
+  "arquivo": "manrope-normal-400.woff2"
+ },
+ {
+  "familia": "Manrope",
+  "estilo": "normal",
+  "peso": 700,
+  "arquivo": "manrope-normal-400.woff2"
+ },
+ {
+  "familia": "Manrope",
+  "estilo": "normal",
+  "peso": 800,
+  "arquivo": "manrope-normal-400.woff2"
+ },
+ {
+  "familia": "Mulish",
+  "estilo": "normal",
+  "peso": 400,
+  "arquivo": "mulish-normal-400.woff2"
+ },
+ {
+  "familia": "Mulish",
+  "estilo": "normal",
+  "peso": 600,
+  "arquivo": "mulish-normal-400.woff2"
+ },
+ {
+  "familia": "Mulish",
+  "estilo": "normal",
+  "peso": 700,
+  "arquivo": "mulish-normal-400.woff2"
+ },
+ {
+  "familia": "Nunito",
+  "estilo": "normal",
+  "peso": 400,
+  "arquivo": "nunito-normal-400.woff2"
+ },
+ {
+  "familia": "Nunito",
+  "estilo": "normal",
+  "peso": 600,
+  "arquivo": "nunito-normal-400.woff2"
+ },
+ {
+  "familia": "Nunito",
+  "estilo": "normal",
+  "peso": 700,
+  "arquivo": "nunito-normal-400.woff2"
+ },
+ {
+  "familia": "Nunito Sans",
+  "estilo": "normal",
+  "peso": 400,
+  "arquivo": "nunito-sans-normal-400.woff2"
+ },
+ {
+  "familia": "Nunito Sans",
+  "estilo": "normal",
+  "peso": 600,
+  "arquivo": "nunito-sans-normal-400.woff2"
+ },
+ {
+  "familia": "Nunito Sans",
+  "estilo": "normal",
+  "peso": 700,
+  "arquivo": "nunito-sans-normal-400.woff2"
+ },
+ {
+  "familia": "Oswald",
+  "estilo": "normal",
+  "peso": 500,
+  "arquivo": "oswald-normal-500.woff2"
+ },
+ {
+  "familia": "Oswald",
+  "estilo": "normal",
+  "peso": 600,
+  "arquivo": "oswald-normal-500.woff2"
+ },
+ {
+  "familia": "Oswald",
+  "estilo": "normal",
+  "peso": 700,
+  "arquivo": "oswald-normal-500.woff2"
+ },
+ {
+  "familia": "Outfit",
+  "estilo": "normal",
+  "peso": 400,
+  "arquivo": "outfit-normal-400.woff2"
+ },
+ {
+  "familia": "Outfit",
+  "estilo": "normal",
+  "peso": 500,
+  "arquivo": "outfit-normal-400.woff2"
+ },
+ {
+  "familia": "Outfit",
+  "estilo": "normal",
+  "peso": 600,
+  "arquivo": "outfit-normal-400.woff2"
+ },
+ {
+  "familia": "Outfit",
+  "estilo": "normal",
+  "peso": 700,
+  "arquivo": "outfit-normal-400.woff2"
+ },
+ {
+  "familia": "Outfit",
+  "estilo": "normal",
+  "peso": 800,
+  "arquivo": "outfit-normal-400.woff2"
+ },
+ {
+  "familia": "Playfair Display",
+  "estilo": "italic",
+  "peso": 500,
+  "arquivo": "playfair-display-italic-500.woff2"
+ },
+ {
+  "familia": "Playfair Display",
+  "estilo": "normal",
+  "peso": 500,
+  "arquivo": "playfair-display-normal-500.woff2"
+ },
+ {
+  "familia": "Playfair Display",
+  "estilo": "normal",
+  "peso": 600,
+  "arquivo": "playfair-display-normal-500.woff2"
+ },
+ {
+  "familia": "Playfair Display",
+  "estilo": "normal",
+  "peso": 700,
+  "arquivo": "playfair-display-normal-500.woff2"
+ },
+ {
+  "familia": "Plus Jakarta Sans",
+  "estilo": "normal",
+  "peso": 400,
+  "arquivo": "plus-jakarta-sans-normal-400.woff2"
+ },
+ {
+  "familia": "Plus Jakarta Sans",
+  "estilo": "normal",
+  "peso": 500,
+  "arquivo": "plus-jakarta-sans-normal-400.woff2"
+ },
+ {
+  "familia": "Plus Jakarta Sans",
+  "estilo": "normal",
+  "peso": 600,
+  "arquivo": "plus-jakarta-sans-normal-400.woff2"
+ },
+ {
+  "familia": "Plus Jakarta Sans",
+  "estilo": "normal",
+  "peso": 700,
+  "arquivo": "plus-jakarta-sans-normal-400.woff2"
+ },
+ {
+  "familia": "Plus Jakarta Sans",
+  "estilo": "normal",
+  "peso": 800,
+  "arquivo": "plus-jakarta-sans-normal-400.woff2"
+ },
+ {
+  "familia": "Quicksand",
+  "estilo": "normal",
+  "peso": 500,
+  "arquivo": "quicksand-normal-500.woff2"
+ },
+ {
+  "familia": "Quicksand",
+  "estilo": "normal",
+  "peso": 600,
+  "arquivo": "quicksand-normal-500.woff2"
+ },
+ {
+  "familia": "Quicksand",
+  "estilo": "normal",
+  "peso": 700,
+  "arquivo": "quicksand-normal-500.woff2"
+ },
+ {
+  "familia": "Source Sans 3",
+  "estilo": "normal",
+  "peso": 400,
+  "arquivo": "source-sans-3-normal-400.woff2"
+ },
+ {
+  "familia": "Source Sans 3",
+  "estilo": "normal",
+  "peso": 600,
+  "arquivo": "source-sans-3-normal-400.woff2"
+ },
+ {
+  "familia": "Source Sans 3",
+  "estilo": "normal",
+  "peso": 700,
+  "arquivo": "source-sans-3-normal-400.woff2"
+ }
+]

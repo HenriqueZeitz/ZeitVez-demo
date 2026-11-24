@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ZeitVez//Vitrine//PT
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:aurora-ag-15@zeitvez.exemplo
+DTSTAMP:20261020T143000
+DTSTART;TZID=America/Sao_Paulo:20261021T150000
+DTEND;TZID=America/Sao_Paulo:20261021T160000
+SUMMARY:Corte e finalização · Studio Aurora
+LOCATION:Rua das Acácias, 120 — Vila Madalena, São Paulo - SP
+END:VEVENT
+END:VCALENDAR

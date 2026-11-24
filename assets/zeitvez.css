@@ -1,0 +1,126 @@
+/* Tema do próprio ZeitVez (site institucional, admin e telas de estado) — provisório. Segue o tema do sistema; o botão do cabeçalho alterna.
+   Este bloco é o "tema" do tenant: o layout é o mesmo para todos, só estas variáveis mudam. */
+:root {
+  --fonte-titulo: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --fonte-corpo: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --esquema: light;
+  --cor-fundo: #F8FAFC;
+  --cor-superficie: #FFFFFF;
+  --cor-superficie-2: #F1F5F9;
+  --cor-campo: #FFFFFF;
+  --cor-texto: #0F172A;
+  --cor-texto-suave: #475569;
+  --cor-borda: #E2E8F0;
+  --cor-borda-forte: #CBD5E1;
+  --cor-primaria: #4338CA;
+  --cor-primaria-forte: #3730A3;
+  --cor-primaria-suave: #E0E7FF;
+  --cor-sobre-primaria: #FFFFFF;
+  --cor-secundaria: #F59E0B;
+  --cor-foco: #6366F1;
+  --cor-foto-1: #C7D2FE;
+  --cor-foto-2: #6366F1;
+  --cor-foto-3: #FDE68A;
+  --cor-foto-texto: #1E1B4B;
+  --cor-sucesso-fundo: #E6F4EA;
+  --cor-sucesso-texto: #1B6B38;
+  --cor-sucesso-borda: #BEDFC9;
+  --cor-alerta-fundo: #FFF4DB;
+  --cor-alerta-texto: #855600;
+  --cor-alerta-borda: #EFD79C;
+  --cor-erro-fundo: #FCE9E7;
+  --cor-erro-texto: #A1251A;
+  --cor-erro-borda: #EFC3BD;
+  --cor-azul-fundo: #E6EEFB;
+  --cor-azul-texto: #1D4E9E;
+  --cor-azul-borda: #BCD0F0;
+  --cor-roxo-fundo: #F1EAFB;
+  --cor-roxo-texto: #5B2D9E;
+  --cor-roxo-borda: #D9C6F2;
+  --titulo-caixa: none;
+  --titulo-espaco: -0.02em;
+  --titulo-peso: 800;
+  --raio: 10px;
+  --raio-grande: 16px;
+  --raio-botao: 10px;
+  --raio-avatar: 999px;
+  --sombra: 0 1px 2px rgba(15,23,42,.04), 0 8px 24px rgba(15,23,42,.06);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-tema="claro"]) {
+    --esquema: dark;
+    --cor-fundo: #0B0F1A;
+    --cor-superficie: #121826;
+    --cor-superficie-2: #1B2232;
+    --cor-campo: #0E1320;
+    --cor-texto: #E8ECF4;
+    --cor-texto-suave: #9AA4B8;
+    --cor-borda: #242C3D;
+    --cor-borda-forte: #364055;
+    --cor-primaria: #8B93F8;
+    --cor-primaria-forte: #A9AFFB;
+    --cor-primaria-suave: #23244A;
+    --cor-sobre-primaria: #0B0F1A;
+    --cor-secundaria: #F59E0B;
+    --cor-foco: #A9AFFB;
+    --cor-foto-1: #312E81;
+    --cor-foto-2: #4F46E5;
+    --cor-foto-3: #78350F;
+    --cor-foto-texto: #E0E7FF;
+    --cor-sucesso-fundo: #11301E;
+    --cor-sucesso-texto: #86DFAA;
+    --cor-sucesso-borda: #1F4F33;
+    --cor-alerta-fundo: #33280F;
+    --cor-alerta-texto: #F2C66B;
+    --cor-alerta-borda: #5A4516;
+    --cor-erro-fundo: #3A1614;
+    --cor-erro-texto: #F7A196;
+    --cor-erro-borda: #62261F;
+    --cor-azul-fundo: #13233F;
+    --cor-azul-texto: #93B9F5;
+    --cor-azul-borda: #24406B;
+    --cor-roxo-fundo: #2A1A40;
+    --cor-roxo-texto: #C9A8F5;
+    --cor-roxo-borda: #4A2E70;
+    --sombra: none;
+  }
+}
+
+:root[data-tema="escuro"] {
+  --esquema: dark;
+  --cor-fundo: #0B0F1A;
+  --cor-superficie: #121826;
+  --cor-superficie-2: #1B2232;
+  --cor-campo: #0E1320;
+  --cor-texto: #E8ECF4;
+  --cor-texto-suave: #9AA4B8;
+  --cor-borda: #242C3D;
+  --cor-borda-forte: #364055;
+  --cor-primaria: #8B93F8;
+  --cor-primaria-forte: #A9AFFB;
+  --cor-primaria-suave: #23244A;
+  --cor-sobre-primaria: #0B0F1A;
+  --cor-secundaria: #F59E0B;
+  --cor-foco: #A9AFFB;
+  --cor-foto-1: #312E81;
+  --cor-foto-2: #4F46E5;
+  --cor-foto-3: #78350F;
+  --cor-foto-texto: #E0E7FF;
+  --cor-sucesso-fundo: #11301E;
+  --cor-sucesso-texto: #86DFAA;
+  --cor-sucesso-borda: #1F4F33;
+  --cor-alerta-fundo: #33280F;
+  --cor-alerta-texto: #F2C66B;
+  --cor-alerta-borda: #5A4516;
+  --cor-erro-fundo: #3A1614;
+  --cor-erro-texto: #F7A196;
+  --cor-erro-borda: #62261F;
+  --cor-azul-fundo: #13233F;
+  --cor-azul-texto: #93B9F5;
+  --cor-azul-borda: #24406B;
+  --cor-roxo-fundo: #2A1A40;
+  --cor-roxo-texto: #C9A8F5;
+  --cor-roxo-borda: #4A2E70;
+  --sombra: none;
+}

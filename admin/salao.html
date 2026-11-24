@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Salão · ZeitVez Admin</title>
+  <script>try{var t=localStorage.getItem('zeitvez-tema');if(t)document.documentElement.dataset.tema=t}catch(e){}</script>
+  <link rel="stylesheet" href="../assets/fontes.css">
+  <link rel="stylesheet" href="../assets/zeitvez.css">
+  <link rel="stylesheet" href="../assets/vitrine.css">
+  <script defer src="../assets/telas.js"></script>
+  <script defer src="../assets/app.js"></script>
+</head>
+<body class="min-h-screen bg-fundo font-corpo text-texto antialiased" data-raiz="../">
+<a href="#conteudo" class="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-50 focus:rounded-tema focus:bg-fundo focus:px-4 focus:py-2 focus:font-semibold focus:text-texto focus:shadow-lg">Pular para o conteúdo</a>
+<header class="border-b border-borda bg-fundo">
+  <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-6 gap-y-2 px-4 py-3 sm:px-6">
+    <div class="flex items-center gap-6">
+      <a href="index.html" class="flex items-center gap-2.5">
+        <span class="inline-flex h-9 w-9 items-center justify-center rounded-tema bg-primaria text-sobre-primaria"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/><path d="M19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg></span>
+        <span class="titulo whitespace-nowrap text-lg">ZeitVez Admin</span>
+      </a>
+      <nav aria-label="Painel" class="flex items-center gap-4">
+        <a href="index.html" class="inline-flex min-h-11 items-center text-sm font-semibold text-primaria underline-offset-4 hover:underline">Salões</a>
+        <a href="configuracoes.html" class="inline-flex min-h-11 items-center text-sm font-semibold text-primaria underline-offset-4 hover:underline">Configurações</a>
+      </nav>
+    </div>
+    <a href="../index.html" class="btn btn-secundario gap-2 px-4"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h10"/></svg> Sair</a>
+  </div>
+</header>
+<main id="conteudo" tabindex="-1" class="mx-auto w-full max-w-6xl px-4 pb-16 pt-8 outline-none sm:px-6 sm:pt-10">
+
+<div class="mx-auto max-w-3xl">
+  <a href="index.html" class="inline-flex min-h-11 items-center text-sm font-semibold text-primaria underline-offset-4 hover:underline">← Voltar para os salões</a>
+  <div class="mt-3 flex flex-wrap items-center gap-3">
+    <h1 class="titulo text-3xl sm:text-4xl">Studio Aurora</h1>
+    <span class="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold bg-[#DCFCE7] text-[#14532D]">Ativo</span>
+  </div>
+  <p role="status" class="mt-4 rounded-lg border border-borda bg-superficie-2 p-3 text-sm" data-aviso-criado hidden>Salão criado. Enviamos o e-mail “Defina sua senha” para <strong class="break-all">marina@studioaurora.com.br</strong>; o link vale por 72 horas. Se ele não chegar, use “Reenviar e-mail de acesso” abaixo.</p>
+
+  <div class="mt-8 space-y-6">
+    <section class="rounded-xl border border-borda bg-superficie p-5 sm:p-6">
+      <h2 class="titulo text-xl">Dados do salão</h2>
+      
+      <div class="mt-5"><dl class="grid grid-cols-[auto_1fr] gap-x-6 gap-y-2 text-sm">
+        <dt class="text-suave">Tipo</dt>
+        <dd>Salão</dd>
+        <dt class="text-suave">Endereço principal</dt>
+        <dd class="break-all">aurora.localhost <a href="../aurora/index.html" class="inline-flex min-h-11 items-center text-sm font-semibold text-primaria underline-offset-4 hover:underline ml-2 gap-1">Abrir site<svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg></a></dd>
+        <dt class="text-suave">Status</dt>
+        <dd><span class="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold bg-[#DCFCE7] text-[#14532D]">Ativo</span> <span class="text-suave">desde 12/01/2026 00:00</span></dd>
+        <dt class="text-suave">Criado em</dt>
+        <dd>12/01/2026</dd>
+      </dl></div>
+    </section>
+
+    <section class="rounded-xl border border-borda bg-superficie p-5 sm:p-6">
+      <h2 class="titulo text-xl">Dono do salão</h2>
+      
+      <div class="mt-5"><dl class="grid grid-cols-[auto_1fr] gap-x-6 gap-y-2 text-sm">
+        <dt class="text-suave">Nome</dt>
+        <dd>Marina Costa</dd>
+        <dt class="text-suave">E-mail</dt>
+        <dd class="break-all">marina@studioaurora.com.br</dd>
+        <dt class="text-suave">Acesso</dt>
+        <dd>Senha definida</dd>
+      </dl></div>
+    </section>
+
+    <section class="rounded-xl border border-borda bg-superficie p-5 sm:p-6">
+      <h2 class="titulo text-xl">Endereços</h2>
+      <p class="mt-1 text-sm text-suave">O endereço principal abre o site do salão. Os demais levam o visitante para o principal, no mesmo caminho.</p>
+      <div class="mt-5"><div class="space-y-6">
+        <ul class="divide-y divide-borda rounded-lg border border-borda">
+          <li class="flex flex-wrap items-center justify-between gap-x-4 gap-y-3 p-4">
+            <div class="min-w-0 space-y-1.5">
+              <p class="break-all font-semibold">aurora.localhost</p>
+              <p class="flex flex-wrap items-center gap-2 text-sm">
+                <span class="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold bg-[#DCFCE7] text-[#14532D]">Principal</span>
+                
+              </p>
+            </div>
+            
+          </li>
+          <li class="flex flex-wrap items-center justify-between gap-x-4 gap-y-3 p-4">
+            <div class="min-w-0 space-y-1.5">
+              <p class="break-all font-semibold">agenda.studioaurora.com.br</p>
+              <p class="flex flex-wrap items-center gap-2 text-sm">
+                <span class="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold bg-superficie-2 text-texto">Redireciona para o principal</span>
+                <span class="text-suave">Domínio próprio</span>
+              </p>
+            </div>
+            <div class="flex flex-wrap items-start gap-2">
+              <button type="button" class="btn btn-secundario h-11 px-4" data-toast="Demonstração: nada foi enviado." aria-label="Tornar agenda.studioaurora.com.br o endereço principal">Tornar principal</button>
+              <button type="button" class="btn btn-secundario h-11 px-4" data-abrir-dialogo="dlg-remover" aria-label="Remover o endereço agenda.studioaurora.com.br">Remover</button>
+            </div>
+          </li>
+        </ul>
+        <div>
+          <h3 class="text-sm font-semibold">Adicionar endereço</h3>
+          <form class="mt-3 space-y-4" data-ir-aviso novalidate>
+            <div class="space-y-1.5">
+              <label for="novo-subdominio" class="campo-rotulo !mb-0">Subdomínio</label>
+              <div class="flex items-center gap-2">
+                <input id="novo-subdominio" name="subdomain" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" class="campo min-w-0 flex-1" aria-describedby="novo-subdominio-previa novo-subdominio-ajuda" data-subdominio data-base="localhost">
+                <span aria-hidden="true" class="text-base text-suave">.localhost</span>
+              </div>
+              <p id="novo-subdominio-previa" class="text-sm text-suave" data-subdominio-previa>Endereço do site: digite o subdomínio (letras minúsculas, números e hífen).</p>
+              <p id="novo-subdominio-ajuda" class="text-sm text-suave">O novo endereço leva ao endereço principal até você torná-lo o principal.</p>
+            </div>
+            <button type="submit" class="btn btn-primario">Adicionar endereço</button>
+          </form>
+        </div>
+      </div></div>
+    </section>
+
+    <section class="rounded-xl border border-borda bg-superficie p-5 sm:p-6">
+      <h2 class="titulo text-xl">Editar</h2>
+      
+      <div class="mt-5"><form class="space-y-5" data-ir-aviso novalidate>
+        <div class="space-y-1.5">
+        <div class="flex flex-wrap items-end justify-between gap-x-3 gap-y-1">
+          <label class="campo-rotulo !mb-0" for="editar-nome">Nome do salão</label>
+        </div>
+        <input class="campo" id="editar-nome" type="text" autocomplete="off" value="Studio Aurora">
+        
+      </div>
+        <fieldset role="radiogroup" class="space-y-2 rounded-tema">
+          <legend class="text-sm font-semibold">Tipo</legend>
+          <div class="grid gap-3 sm:grid-cols-2">
+            <div class="relative">
+              <input id="editar-tipo-Salon" type="radio" name="editar-tipo" value="Salon" class="peer sr-only" checked>
+              <label for="editar-tipo-Salon" class="flex h-full cursor-pointer flex-col gap-2 rounded-xl border border-borda bg-superficie p-3 text-sm peer-checked:border-primaria peer-checked:ring-2 peer-checked:ring-primaria peer-focus-visible:ring-2 peer-focus-visible:ring-primaria">
+                <span class="font-semibold">Salão</span>
+              </label>
+            </div>
+            <div class="relative">
+              <input id="editar-tipo-Barbershop" type="radio" name="editar-tipo" value="Barbershop" class="peer sr-only">
+              <label for="editar-tipo-Barbershop" class="flex h-full cursor-pointer flex-col gap-2 rounded-xl border border-borda bg-superficie p-3 text-sm peer-checked:border-primaria peer-checked:ring-2 peer-checked:ring-primaria peer-focus-visible:ring-2 peer-focus-visible:ring-primaria">
+                <span class="font-semibold">Barbearia</span>
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn btn-primario">Salvar alterações</button>
+      </form></div>
+    </section>
+
+    <section class="rounded-xl border border-borda bg-superficie p-5 sm:p-6">
+      <h2 class="titulo text-xl">Status do site</h2>
+      <p class="mt-1 text-sm text-suave">Suspender tira o site do ar até a mensalidade ser regularizada. Cancelar encerra o salão de vez.</p>
+      <div class="mt-5"><div class="flex flex-wrap gap-3">
+        <button type="button" class="btn btn-secundario h-11 px-4 px-5" data-abrir-dialogo="dlg-suspender">Suspender</button>
+        <button type="button" class="btn btn-perigo h-11 px-5" data-abrir-dialogo="dlg-cancelar-salao">Cancelar salão</button>
+      </div></div>
+    </section>
+  </div>
+</div>
+
+<dialog id="dlg-suspender" class="dialogo" aria-labelledby="dlg-suspender-titulo">
+  <div class="grid gap-4 p-6">
+    <h2 id="dlg-suspender-titulo" class="titulo text-xl">Suspender Studio Aurora?</h2>
+    <p class="text-sm text-suave">O site do salão em <strong class="break-all text-texto">aurora.localhost</strong> passa a mostrar “Site temporariamente indisponível” para os clientes, em qualquer página. Os dados ficam guardados e você pode reativar quando quiser.</p>
+    
+    <div class="flex flex-col-reverse gap-2 sm:flex-row sm:justify-end">
+      <button type="button" class="btn btn-secundario" data-fechar-dialogo>Voltar</button>
+      <button type="button" class="btn btn-primario" data-confirmar-admin>Suspender salão</button>
+    </div>
+  </div>
+</dialog>
+<dialog id="dlg-cancelar-salao" class="dialogo" aria-labelledby="dlg-cancelar-salao-titulo">
+  <div class="grid gap-4 p-6">
+    <h2 id="dlg-cancelar-salao-titulo" class="titulo text-xl">Cancelar Studio Aurora?</h2>
+    <p class="text-sm text-suave"><strong style="color: var(--cor-erro-texto)">Esta ação não pode ser desfeita.</strong> O endereço <strong class="break-all text-texto">aurora.localhost</strong> passa a mostrar “Salão não encontrado”, e o salão não poderá mais ser editado, suspenso nem reativado.</p>
+    <div class="space-y-1.5">
+      <label for="confirmar-subdominio" class="campo-rotulo !mb-0">Para confirmar, digite o subdomínio: <strong class="break-all">aurora</strong></label>
+      <input id="confirmar-subdominio" name="confirm" class="campo" autocomplete="off" autocapitalize="none" spellcheck="false" data-confirma-subdominio="aurora">
+    </div>
+    <div class="flex flex-col-reverse gap-2 sm:flex-row sm:justify-end">
+      <button type="button" class="btn btn-secundario" data-fechar-dialogo>Voltar</button>
+      <button type="button" class="btn btn-primario" style="background: var(--cor-erro-texto); color: var(--cor-fundo)" data-confirmar-admin disabled data-requer-confirmacao>Cancelar salão para sempre</button>
+    </div>
+  </div>
+</dialog>
+<dialog id="dlg-remover" class="dialogo" aria-labelledby="dlg-remover-titulo">
+  <div class="grid gap-4 p-6">
+    <h2 id="dlg-remover-titulo" class="titulo text-xl">Remover este endereço?</h2>
+    <p class="text-sm text-suave">O endereço <strong class="break-all text-texto">agenda.studioaurora.com.br</strong> deixa de levar ao salão e mostra “Salão não encontrado”. Links já divulgados nele param de funcionar.</p>
+    
+    <div class="flex flex-col-reverse gap-2 sm:flex-row sm:justify-end">
+      <button type="button" class="btn btn-secundario" data-fechar-dialogo>Voltar</button>
+      <button type="button" class="btn btn-primario" style="background: var(--cor-erro-texto); color: var(--cor-fundo)" data-confirmar-admin>Remover endereço</button>
+    </div>
+  </div>
+</dialog>
+</main>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Studio Aurora · Cabelo, cor e cuidado — sem pressa.</title>
+  <meta name="description" content="Cortes, coloração e tratamentos para todos os tipos de cabelo, num espaço tranquilo na Vila Madalena. Agende online em menos de um minuto.">
+  <link rel="stylesheet" href="../assets/fontes.css">
+  <link rel="stylesheet" href="tema.css">
+  <link rel="stylesheet" href="../assets/vitrine.css">
+  <script defer src="../assets/telas.js"></script>
+  <script defer src="../assets/app.js"></script>
+</head>
+<body class="min-h-screen bg-fundo font-corpo text-texto antialiased" data-raiz="../">
+<a href="#conteudo" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:rounded-tema focus:bg-superficie focus:px-3 focus:py-2">Pular para o conteúdo</a>
+<header class="sticky top-0 z-40 border-b border-borda bg-fundo">
+  <div class="relative mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
+    <a href="index.html" class="flex min-w-0 items-center gap-3">
+      <span class="monograma">S</span>
+      <span class="titulo break-words text-lg sm:text-xl">Studio Aurora</span>
+    </a>
+    <nav class="hidden items-center gap-6 text-sm font-semibold lg:flex" aria-label="Principal">
+      <a href="index.html#servicos" class="text-suave hover:text-texto">Serviços</a>
+      <a href="index.html#equipe" class="text-suave hover:text-texto">Equipe</a>
+      <a href="index.html#sobre" class="text-suave hover:text-texto">Sobre</a>
+      <a href="index.html#horario" class="text-suave hover:text-texto">Horário</a>
+      <a href="index.html#contato" class="text-suave hover:text-texto">Contato</a>
+    </nav>
+    <div class="flex shrink-0 items-center gap-2">
+      <div class="hidden sm:block">
+        <div class="relative" data-menu-suspenso>
+            <button type="button" class="btn btn-fantasma btn-sm gap-2" aria-expanded="false" aria-haspopup="menu" aria-controls="menu-conta"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg> Olá, Alex <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+            <div id="menu-conta" role="menu" class="menu-suspenso" hidden>
+              <a role="menuitem" href="minha-conta.html">Minha conta</a>
+              <a role="menuitem" href="meus-agendamentos.html">Meus agendamentos</a>
+              <a role="menuitem" href="index.html">Sair</a>
+            </div>
+          </div>
+      </div>
+      <a href="agendar-profissional.html" class="btn btn-primario btn-sm hidden sm:inline-flex">Agendar horário</a>
+      <div class="lg:hidden">
+        <button type="button" class="btn btn-fantasma h-11 w-11 px-0" data-menu-botao aria-controls="menu-mobile" aria-expanded="false" aria-label="Abrir menu"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      </div>
+    </div>
+    <nav id="menu-mobile" hidden aria-label="Menu" class="absolute inset-x-0 top-full border-b border-borda bg-fundo px-4 pb-4 pt-2 shadow-sm lg:hidden">
+      <a href="agendar-profissional.html" class="btn btn-primario btn-bloco my-2">Agendar horário</a>
+      <ul>
+        <li><a href="index.html#servicos" class="block rounded-tema px-2 py-3 font-semibold hover:bg-superficie-2">Serviços</a></li>
+        <li><a href="index.html#equipe" class="block rounded-tema px-2 py-3 font-semibold hover:bg-superficie-2">Equipe</a></li>
+        <li><a href="index.html#sobre" class="block rounded-tema px-2 py-3 font-semibold hover:bg-superficie-2">Sobre</a></li>
+        <li><a href="index.html#horario" class="block rounded-tema px-2 py-3 font-semibold hover:bg-superficie-2">Horário</a></li>
+        <li><a href="index.html#contato" class="block rounded-tema px-2 py-3 font-semibold hover:bg-superficie-2">Contato</a></li>
+        <li><a href="minha-conta.html" class="block rounded-tema px-2 py-3 font-semibold hover:bg-superficie-2">Minha conta</a></li>
+        <li><a href="meus-agendamentos.html" class="block rounded-tema px-2 py-3 font-semibold hover:bg-superficie-2">Meus agendamentos</a></li>
+        <li><a href="index.html" class="block w-full rounded-tema px-2 py-3 text-left font-semibold hover:bg-superficie-2">Sair</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="conteudo" tabindex="-1" class="outline-none">
+  <p class="aviso-pagina mx-auto mt-4 max-w-6xl" role="status" data-aviso-conta hidden>Sua conta foi excluída e seus dados pessoais foram apagados.</p>
+  <section class="mx-auto grid max-w-6xl items-center gap-10 px-4 pb-12 pt-10 sm:px-6 lg:grid-cols-2 lg:gap-14 lg:pb-20 lg:pt-16">
+    <div>
+      <p class="rotulo">Salão · São Paulo</p>
+      <h1 class="titulo mt-3 break-words text-4xl sm:text-5xl lg:text-6xl">Studio Aurora</h1>
+      <p class="mt-4 text-2xl leading-snug sm:text-3xl" style="font-family: var(--fonte-titulo)">Cabelo, cor e cuidado — sem pressa.</p>
+      <p class="mt-5 max-w-xl text-lg text-suave">Cortes, coloração e tratamentos para todos os tipos de cabelo, num espaço tranquilo na Vila Madalena. Agende online em menos de um minuto.</p>
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+        <a href="agendar-profissional.html" class="btn btn-primario">Agendar horário</a>
+        <a href="https://wa.me/5511900000101" class="btn btn-secundario" target="_blank" rel="noopener">Chamar no WhatsApp<span class="sr-only"> (abre em nova aba)</span></a>
+        <a href="#servicos" class="link inline-flex min-h-11 items-center justify-center text-[0.95rem] font-semibold sm:px-2" style="text-decoration: none">Ver serviços e preços</a>
+      </div>
+      <ul class="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-suave">
+        <li class="flex items-center gap-2"><span style="color: var(--cor-primaria-forte)"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>Aberto hoje até 19h</li>
+        <li class="flex items-center gap-2"><span style="color: var(--cor-primaria-forte)"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>Vila Madalena, São Paulo</li>
+      </ul>
+    </div>
+    <div class="relative mb-8 lg:mb-0">
+      <div aria-hidden="true" class="relative flex aspect-[4/5] items-center justify-center overflow-hidden rounded-tema-lg sm:aspect-[5/4] lg:aspect-[4/5]" style="background-image: radial-gradient(circle at 75% 20%, rgb(255 255 255 / 0.22), transparent 55%), linear-gradient(135deg, var(--cor-foto-1), var(--cor-foto-2) 60%, var(--cor-foto-3))">
+        <span class="titulo select-none text-[9rem] leading-none sm:text-[11rem]" style="color: var(--cor-foto-texto); opacity: .8">S</span>
+      </div>
+      <div class="cartao absolute inset-x-4 -bottom-6 p-4 shadow-lg sm:left-auto sm:max-w-xs">
+        <p class="rotulo flex items-center gap-2"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg> Próximo horário livre</p>
+        <p class="titulo mt-1.5 text-lg">ter., 20 out, às 15:30</p>
+        <p class="text-sm text-suave">para atendimentos de 40 min</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos" aria-labelledby="servicos-titulo" class="scroll-mt-20 border-t border-borda bg-superficie-2">
+    <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+      <div class="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+        <div>
+          <p class="rotulo">Serviços</p>
+          <h2 id="servicos-titulo" class="titulo mt-2 text-3xl sm:text-4xl">O que fazemos</h2>
+        </div>
+        <p class="max-w-sm text-sm text-suave">Preços e durações de referência.</p>
+      </div>
+      <ul class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <li class="cartao flex flex-col overflow-hidden">
+          <div class="flex flex-1 flex-col p-5">
+            <h3 class="titulo break-words text-xl">Corte e finalização</h3>
+            <div class="flex-1"><p class="mt-2 text-sm text-suave">Corte personalizado com lavagem e finalização.</p></div>
+            <div class="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-borda pt-4">
+              <div class="text-sm">
+                <p class="font-bold">R$ 120</p>
+                <p class="flex items-center gap-1 text-suave"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 1h</p>
+              </div>
+              <a href="agendar-profissional.html" class="btn btn-secundario btn-sm">Agendar horário<span class="sr-only">: Corte e finalização</span></a>
+            </div>
+          </div>
+        </li>
+        <li class="cartao flex flex-col overflow-hidden">
+          <div class="flex flex-1 flex-col p-5">
+            <h3 class="titulo break-words text-xl">Corte curto</h3>
+            <div class="flex-1"><p class="mt-2 text-sm text-suave">Máquina e tesoura, com lavagem e acabamento.</p></div>
+            <div class="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-borda pt-4">
+              <div class="text-sm">
+                <p class="font-bold">R$ 80</p>
+                <p class="flex items-center gap-1 text-suave"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 40 min</p>
+              </div>
+              <a href="agendar-profissional.html" class="btn btn-secundario btn-sm">Agendar horário<span class="sr-only">: Corte curto</span></a>
+            </div>
+          </div>
+        </li>
+        <li class="cartao flex flex-col overflow-hidden">
+          <div class="flex flex-1 flex-col p-5">
+            <h3 class="titulo break-words text-xl">Escova modelada</h3>
+            <div class="flex-1"><p class="mt-2 text-sm text-suave">Lavagem e escova lisa ou com movimento.</p></div>
+            <div class="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-borda pt-4">
+              <div class="text-sm">
+                <p class="font-bold">R$ 75</p>
+                <p class="flex items-center gap-1 text-suave"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 45 min</p>
+              </div>
+              <a href="agendar-profissional.html" class="btn btn-secundario btn-sm">Agendar horário<span class="sr-only">: Escova modelada</span></a>
+            </div>
+          </div>
+        </li>
+        <li class="cartao flex flex-col overflow-hidden">
+          <div class="flex flex-1 flex-col p-5">
+            <h3 class="titulo break-words text-xl">Coloração</h3>
+            <div class="flex-1"><p class="mt-2 text-sm text-suave">Retoque de raiz ou cor global, sem amônia.</p></div>
+            <div class="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-borda pt-4">
+              <div class="text-sm">
+                <p class="font-bold">a partir de R$ 260</p>
+                <p class="flex items-center gap-1 text-suave"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 2h</p>
+              </div>
+              <a href="agendar-profissional.html" class="btn btn-secundario btn-sm">Agendar horário<span class="sr-only">: Coloração</span></a>
+            </div>
+          </div>
+        </li>
+        <li class="cartao flex flex-col overflow-hidden">
+          <div class="flex flex-1 flex-col p-5">
+            <h3 class="titulo break-words text-xl">Mechas e iluminado</h3>
+            <div class="flex-1"><p class="mt-2 text-sm text-suave">Luzes, balayage e iluminado sob medida.</p></div>
+            <div class="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-borda pt-4">
+              <div class="text-sm">
+                <p class="font-bold">a partir de R$ 450</p>
+                <p class="flex items-center gap-1 text-suave"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 3h</p>
+              </div>
+              <a href="agendar-profissional.html" class="btn btn-secundario btn-sm">Agendar horário<span class="sr-only">: Mechas e iluminado</span></a>
+            </div>
+          </div>
+        </li>
+        <li class="cartao flex flex-col overflow-hidden">
+          <div class="flex flex-1 flex-col p-5">
+            <h3 class="titulo break-words text-xl">Hidratação profunda</h3>
+            <div class="flex-1"><p class="mt-2 text-sm text-suave">Tratamento de reconstrução e brilho.</p></div>
+            <div class="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-borda pt-4">
+              <div class="text-sm">
+                <p class="font-bold">R$ 95</p>
+                <p class="flex items-center gap-1 text-suave"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 45 min</p>
+              </div>
+              <a href="agendar-profissional.html" class="btn btn-secundario btn-sm">Agendar horário<span class="sr-only">: Hidratação profunda</span></a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="equipe" aria-labelledby="equipe-titulo" class="mx-auto max-w-6xl scroll-mt-20 px-4 py-16 sm:px-6">
+    <p class="rotulo">Equipe</p>
+    <h2 id="equipe-titulo" class="titulo mt-2 text-3xl sm:text-4xl">Quem vai te atender</h2>
+    <ul class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <li class="cartao p-5">
+        <div class="flex items-center gap-4">
+          <span aria-hidden="true" class="titulo inline-flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-primaria text-xl text-sobre-primaria">M</span>
+          <div class="min-w-0">
+            <h3 class="titulo break-words text-lg">Marina Costa</h3>
+            <p class="text-sm text-suave">Cabeleireira e sócia</p>
+          </div>
+        </div>
+        <p class="mt-4 text-sm text-suave">Especialista em cortes e texturas, 12 anos de salão.</p>
+        <ul aria-label="Serviços de Marina Costa" class="mt-4 flex flex-wrap gap-2"><li class="rounded-full border border-borda bg-superficie-2 px-2.5 py-0.5 text-xs font-semibold">Corte e finalização</li><li class="rounded-full border border-borda bg-superficie-2 px-2.5 py-0.5 text-xs font-semibold">Corte curto</li><li class="rounded-full border border-borda bg-superficie-2 px-2.5 py-0.5 text-xs font-semibold">Escova modelada</li></ul>
+      </li>
+      <li class="cartao p-5">
+        <div class="flex items-center gap-4">
+          <span aria-hidden="true" class="titulo inline-flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-primaria text-xl text-sobre-primaria">R</span>
+          <div class="min-w-0">
+            <h3 class="titulo break-words text-lg">Rafael Nunes</h3>
+            <p class="text-sm text-suave">Colorista</p>
+          </div>
+        </div>
+        <p class="mt-4 text-sm text-suave">Mechas, iluminados e correção de cor.</p>
+        <ul aria-label="Serviços de Rafael Nunes" class="mt-4 flex flex-wrap gap-2"><li class="rounded-full border border-borda bg-superficie-2 px-2.5 py-0.5 text-xs font-semibold">Coloração</li><li class="rounded-full border border-borda bg-superficie-2 px-2.5 py-0.5 text-xs font-semibold">Mechas e iluminado</li></ul>
+      </li>
+      <li class="cartao p-5">
+        <div class="flex items-center gap-4">
+          <span aria-hidden="true" class="titulo inline-flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-primaria text-xl text-sobre-primaria">B</span>
+          <div class="min-w-0">
+            <h3 class="titulo break-words text-lg">Bia Santos</h3>
+            <p class="text-sm text-suave">Terapeuta capilar</p>
+          </div>
+        </div>
+        <p class="mt-4 text-sm text-suave">Tratamentos e cronograma capilar personalizado.</p>
+        <ul aria-label="Serviços de Bia Santos" class="mt-4 flex flex-wrap gap-2"><li class="rounded-full border border-borda bg-superficie-2 px-2.5 py-0.5 text-xs font-semibold">Escova modelada</li><li class="rounded-full border border-borda bg-superficie-2 px-2.5 py-0.5 text-xs font-semibold">Hidratação profunda</li></ul>
+      </li>
+    </ul>
+  </section>
+
+  <section id="sobre" aria-labelledby="sobre-titulo" class="scroll-mt-20 border-y border-borda bg-superficie">
+    <div class="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2">
+      <div>
+        <p class="rotulo">Sobre</p>
+        <h2 id="sobre-titulo" class="titulo mt-2 text-3xl sm:text-4xl">Nossa história</h2>
+        <div class="mt-4 space-y-4 text-lg text-suave">
+          <p>O Studio Aurora nasceu em 2016 com uma ideia simples: atender com hora marcada, para ninguém precisar esperar. Café passado na hora, música baixa e um time que conversa antes de pegar na tesoura.</p>
+          <p>Trabalhamos com marcas veganas e atendemos todos os tipos e comprimentos de cabelo — do corte curto ao alongamento de mechas.</p>
+        </div>
+      </div>
+      <ul class="grid grid-cols-1 gap-3 self-center sm:grid-cols-2" aria-label="Destaques">
+        <li class="flex items-center gap-3 rounded-tema border border-borda bg-fundo p-4 text-sm font-semibold"><span class="shrink-0" style="color: var(--cor-primaria-forte)"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Desde 2016</li>
+        <li class="flex items-center gap-3 rounded-tema border border-borda bg-fundo p-4 text-sm font-semibold"><span class="shrink-0" style="color: var(--cor-primaria-forte)"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Produtos veganos</li>
+        <li class="flex items-center gap-3 rounded-tema border border-borda bg-fundo p-4 text-sm font-semibold"><span class="shrink-0" style="color: var(--cor-primaria-forte)"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Café e Wi-Fi</li>
+        <li class="flex items-center gap-3 rounded-tema border border-borda bg-fundo p-4 text-sm font-semibold"><span class="shrink-0" style="color: var(--cor-primaria-forte)"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Acessível</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contato" aria-labelledby="contato-titulo" class="mx-auto max-w-6xl scroll-mt-20 px-4 py-16 sm:px-6">
+    <p class="rotulo">Visite a gente</p>
+    <h2 id="contato-titulo" class="titulo mt-2 text-3xl sm:text-4xl">Horário, endereço e contato</h2>
+    <div class="mt-10 grid gap-6 lg:grid-cols-3">
+      <div id="horario" class="scroll-mt-24 cartao p-6">
+        <h3 class="titulo flex items-center gap-2 text-lg"><span style="color: var(--cor-primaria-forte)"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>Horário de funcionamento</h3>
+        <div class="mt-4"><p class="text-sm font-semibold" style="color: var(--cor-primaria-forte)">Aberto hoje até 19h</p>
+          <dl class="mt-4 space-y-2 text-sm">
+            <div class="flex justify-between gap-4 border-b border-borda pb-2 last:border-0"><dt>Segunda</dt><dd class="num text-right text-suave">Fechado</dd></div>
+            <div class="flex justify-between gap-4 border-b border-borda pb-2 last:border-0"><dt>Terça a sexta</dt><dd class="num text-right text-suave">9h às 19h</dd></div>
+            <div class="flex justify-between gap-4 border-b border-borda pb-2 last:border-0"><dt>Sábado</dt><dd class="num text-right text-suave">9h às 17h</dd></div>
+            <div class="flex justify-between gap-4 border-b border-borda pb-2 last:border-0"><dt>Domingo</dt><dd class="num text-right text-suave">Fechado</dd></div>
+          </dl></div>
+      </div>
+      <div class="scroll-mt-24 cartao p-6">
+        <h3 class="titulo flex items-center gap-2 text-lg"><span style="color: var(--cor-primaria-forte)"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>Endereço</h3>
+        <div class="mt-4"><address class="text-sm not-italic text-suave">Rua das Acácias, 120 — Vila Madalena, São Paulo - SP</address>
+          <a href="https://www.google.com/maps/search/?api=1&query=Rua%20das%20Ac%C3%A1cias%2C%20120%20%E2%80%94%20Vila%20Madalena%2C%20S%C3%A3o%20Paulo%20-%20SP" target="_blank" rel="noopener" class="btn btn-secundario btn-sm mt-5"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg> Como chegar<span class="sr-only"> (abre em nova aba)</span></a></div>
+      </div>
+      <div class="scroll-mt-24 cartao p-6">
+        <h3 class="titulo flex items-center gap-2 text-lg"><span style="color: var(--cor-primaria-forte)"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-13.5 7.8L3 21l1.2-4.5A9 9 0 1 1 21 12z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a4 4 0 0 1-1.8-1.8l.8-1-1-2L9 9.5z"/></svg></span>Fale com a gente</h3>
+        <div class="mt-4"><ul class="space-y-3 text-sm">
+            <li><a class="flex min-h-11 items-center gap-3 break-all hover:underline" href="tel:+551130000101"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-tema bg-primaria-suave" style="color: var(--cor-primaria-forte)"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>(11) 3000-0101</a></li>
+            <li><a class="flex min-h-11 items-center gap-3 break-all hover:underline" href="https://wa.me/5511900000101" target="_blank" rel="noopener"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-tema bg-primaria-suave" style="color: var(--cor-primaria-forte)"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-13.5 7.8L3 21l1.2-4.5A9 9 0 1 1 21 12z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a4 4 0 0 1-1.8-1.8l.8-1-1-2L9 9.5z"/></svg></span>WhatsApp (11) 90000-0101<span class="sr-only"> (abre em nova aba)</span></a></li>
+            <li><a class="flex min-h-11 items-center gap-3 break-all hover:underline" href="https://www.instagram.com/studioaurora/" target="_blank" rel="noopener"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-tema bg-primaria-suave" style="color: var(--cor-primaria-forte)"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></span>@studioaurora<span class="sr-only"> (abre em nova aba)</span></a></li>
+            <li><a class="flex min-h-11 items-center gap-3 break-all hover:underline" href="mailto:contato@studioaurora.com.br"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-tema bg-primaria-suave" style="color: var(--cor-primaria-forte)"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>contato@studioaurora.com.br</a></li>
+          </ul></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="mt-16 border-t border-borda bg-superficie">
+  <div class="mx-auto grid max-w-6xl gap-8 px-4 py-10 sm:grid-cols-2 sm:px-6 lg:grid-cols-3">
+    <div>
+      <div class="flex items-center gap-3"><span class="monograma">S</span><span class="titulo break-words text-lg">Studio Aurora</span></div>
+      <p class="mt-3 text-sm text-suave">Cabelo, cor e cuidado — sem pressa.</p>
+    </div>
+    <div class="text-sm">
+      <h2 class="titulo mb-3 text-base">Endereço</h2>
+      <p class="text-suave">Rua das Acácias, 120 — Vila Madalena, São Paulo - SP</p>
+    </div>
+    <div class="text-sm">
+      <h2 class="titulo mb-3 text-base">Horário</h2>
+      <ul class="space-y-1 text-suave">
+        <li class="flex justify-between gap-4"><span>Segunda</span><span class="num">Fechado</span></li>
+        <li class="flex justify-between gap-4"><span>Terça a sexta</span><span class="num">9h às 19h</span></li>
+        <li class="flex justify-between gap-4"><span>Sábado</span><span class="num">9h às 17h</span></li>
+        <li class="flex justify-between gap-4"><span>Domingo</span><span class="num">Fechado</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-borda">
+    <div class="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-5 text-xs text-suave sm:flex-row sm:items-center sm:justify-between sm:px-6">
+      <span>© 2026 Studio Aurora</span>
+      <nav aria-label="Informações legais" class="flex flex-wrap items-center gap-x-4">
+        <a href="termos.html" class="inline-flex min-h-11 items-center text-sm underline-offset-4 hover:text-texto hover:underline">Termos de uso</a>
+        <a href="privacidade.html" class="inline-flex min-h-11 items-center text-sm underline-offset-4 hover:text-texto hover:underline">Política de privacidade</a>
+      </nav>
+      <span class="font-semibold">Feito com ZeitVez</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

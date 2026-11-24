@@ -1,0 +1,50 @@
+/* Studio Aurora — Tema claro · tons quentes · serifada.
+   Este bloco é o "tema" do tenant: o layout é o mesmo para todos, só estas variáveis mudam. */
+:root {
+  --fonte-titulo: 'Playfair Display', Georgia, serif;
+  --fonte-corpo: 'Lato', system-ui, sans-serif;
+  --esquema: light;
+  --cor-fundo: #FCF5F2;
+  --cor-superficie: #FFFFFF;
+  --cor-superficie-2: #F7EAE5;
+  --cor-campo: #FFFFFF;
+  --cor-texto: #2A1B16;
+  --cor-texto-suave: #67534B;
+  --cor-borda: #EADAD4;
+  --cor-borda-forte: #D0B8AF;
+  --cor-primaria: #A3502E;
+  --cor-primaria-forte: #A3502E;
+  --cor-primaria-suave: #F2E7E2;
+  --cor-sobre-primaria: #FFFFFF;
+  --cor-secundaria: #D7A574;
+  --cor-foco: #A3502E;
+  --cor-foto-1: #DDBBAD;
+  --cor-foto-2: #A3502E;
+  --cor-foto-3: #EDD5C0;
+  --cor-foto-texto: #FFFFFF;
+  --cor-sucesso-fundo: #E6F4EA;
+  --cor-sucesso-texto: #1B6B38;
+  --cor-sucesso-borda: #BEDFC9;
+  --cor-alerta-fundo: #FFF4DB;
+  --cor-alerta-texto: #855600;
+  --cor-alerta-borda: #EFD79C;
+  --cor-erro-fundo: #FCE9E7;
+  --cor-erro-texto: #A1251A;
+  --cor-erro-borda: #EFC3BD;
+  --cor-azul-fundo: #E6EEFB;
+  --cor-azul-texto: #1D4E9E;
+  --cor-azul-borda: #BCD0F0;
+  --cor-roxo-fundo: #F1EAFB;
+  --cor-roxo-texto: #5B2D9E;
+  --cor-roxo-borda: #D9C6F2;
+  --titulo-caixa: none;
+  --titulo-espaco: normal;
+  --titulo-peso: 600;
+  --botao-caixa: none;
+  --botao-espaco: normal;
+  --raio: 10px;
+  --raio-grande: 20px;
+  --raio-botao: 999px;
+  --raio-avatar: 999px;
+  --sombra: 0 1px 2px rgba(60,30,10,.05), 0 8px 24px rgba(60,30,10,.06);
+}

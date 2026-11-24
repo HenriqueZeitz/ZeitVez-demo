@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agenda · Painel · Barbearia Navalha</title>
+  <link rel="stylesheet" href="../../assets/fontes.css">
+  <link rel="stylesheet" href="../tema.css">
+  <link rel="stylesheet" href="../../assets/vitrine.css">
+  <script defer src="../../assets/telas.js"></script>
+  <script defer src="../../assets/app.js"></script>
+</head>
+<body class="min-h-screen bg-fundo font-corpo text-texto antialiased" data-raiz="../../">
+<a href="#conteudo" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:rounded-tema focus:bg-superficie focus:px-3 focus:py-2">Pular para o conteúdo</a>
+<div class="flex min-h-screen flex-col lg:flex-row">
+  <aside class="border-b border-borda bg-superficie px-4 py-4 lg:sticky lg:top-0 lg:h-screen lg:w-64 lg:shrink-0 lg:self-start lg:overflow-y-auto lg:border-b-0 lg:border-r">
+    <div class="flex items-center gap-3 px-1 lg:px-2">
+      <span class="monograma">B</span>
+      <div class="min-w-0">
+        <p class="titulo truncate text-lg leading-tight">Barbearia Navalha</p>
+        <p class="text-xs text-suave">Painel do estabelecimento</p>
+      </div>
+    </div>
+    <div class="mt-4 lg:mt-6">
+      <nav aria-label="Painel" class="flex flex-wrap gap-1 lg:flex-col">
+        <a href="agenda.html" aria-current="page" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none bg-primaria-suave text-texto">Agenda</a>
+        <a href="bloqueios.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Bloqueios</a>
+        <a href="site.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Meu site</a>
+        <a href="servicos.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Serviços</a>
+        <a href="equipe.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Equipe</a>
+        <a href="horario.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Horário</a>
+        <a href="aparencia.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Aparência</a>
+        <a href="regras.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Regras de agendamento</a>
+      </nav>
+    </div>
+    <div class="mt-4 flex flex-wrap items-center gap-2 border-t border-borda pt-4 lg:flex-col lg:items-stretch">
+      <a href="../index.html" class="inline-flex min-h-11 items-center gap-2 rounded-tema px-3 text-sm font-semibold text-suave hover:bg-superficie-2 hover:text-texto"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg> Ver meu site</a>
+      <a href="../index.html" class="inline-flex min-h-11 items-center gap-2 rounded-tema px-3 text-sm font-semibold text-suave hover:bg-superficie-2 hover:text-texto"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h10"/></svg> Sair</a>
+    </div>
+  </aside>
+
+  <main id="conteudo" tabindex="-1" class="min-w-0 flex-1 px-4 pb-20 pt-6 outline-none sm:px-8 sm:pt-8">
+    <div class="mx-auto max-w-3xl">
+
+    <header class="mb-6">
+      <h1 class="titulo text-3xl sm:text-4xl">Agenda</h1>
+      <p class="mt-1 text-suave">Os atendimentos do salão, por dia ou por semana.</p>
+    </header>
+
+    <div class="space-y-5" data-status-mapa="{&quot;confirmado&quot;:[&quot;Confirmado&quot;,&quot;selo-azul&quot;],&quot;andamento&quot;:[&quot;Em atendimento&quot;,&quot;selo-roxo&quot;],&quot;a-conferir&quot;:[&quot;A conferir&quot;,&quot;selo-alerta&quot;],&quot;concluido&quot;:[&quot;Concluído&quot;,&quot;selo-sucesso&quot;],&quot;nao-compareceu&quot;:[&quot;Não compareceu&quot;,&quot;selo-erro&quot;],&quot;cancelado&quot;:[&quot;Cancelado&quot;,&quot;selo-erro&quot;]}">
+      <div role="status" aria-live="polite" class="rounded-tema text-sm" data-aviso-painel data-avisos="{&quot;remarcado&quot;:&quot;Atendimento remarcado.&quot;,&quot;criado&quot;:&quot;Agendamento criado.&quot;}"></div>
+
+      <div class="space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <h2 class="titulo text-2xl first-letter:uppercase sm:text-3xl" aria-live="polite">Sexta, 30 de outubro de 2026</h2>
+          <a href="novo-agendamento.html" class="btn btn-primario"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg> Novo agendamento</a>
+        </div>
+        <div class="flex flex-wrap items-center gap-2">
+          <a href="agenda-dia-9.html" class="btn btn-secundario" aria-label="Dia anterior"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg><span class="hidden sm:inline">Dia anterior</span></a>
+          <a href="agenda.html" class="btn btn-secundario">Hoje</a>
+          <a href="agenda-dia-11.html" class="btn btn-secundario" aria-label="Dia seguinte"><span class="hidden sm:inline">Dia seguinte</span><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></a>
+          <nav aria-label="Visão da agenda" class="ml-auto flex gap-1">
+            <a href="agenda-dia-10.html" aria-current="page" class="chip inline-flex min-h-11 items-center px-4 text-sm font-semibold">Dia</a>
+            <a href="agenda-semana.html" class="chip inline-flex min-h-11 items-center px-4 text-sm font-semibold">Semana</a>
+          </nav>
+        </div>
+        <nav aria-label="Filtrar por profissional" class="flex flex-wrap gap-2" data-filtro-profissional>
+          <button type="button" class="chip inline-flex min-h-11 items-center px-4 text-sm font-semibold" aria-pressed="true" data-profissional="todos">Todos</button>
+          <button type="button" class="chip inline-flex min-h-11 items-center px-4 text-sm font-semibold" aria-pressed="false" data-profissional="diego">Diego Ramos</button>
+          <button type="button" class="chip inline-flex min-h-11 items-center px-4 text-sm font-semibold" aria-pressed="false" data-profissional="thiago">Thiago Alves</button>
+          <button type="button" class="chip inline-flex min-h-11 items-center px-4 text-sm font-semibold" aria-pressed="false" data-profissional="caio">Caio Mendes</button>
+        </nav>
+      </div>
+
+      <div role="group" aria-label="Resumo do período" class="grid grid-cols-2 gap-2 sm:grid-cols-4">
+        <div class="cartao p-3" data-contador="total" data-singular="agendamento" data-plural="agendamentos">
+          <p class="font-semibold" data-texto>0 agendamentos</p>
+        </div>
+        <div class="cartao p-3" data-contador="atender" data-singular="a atender" data-plural="a atender">
+          <p class="font-semibold" data-texto>0 a atender</p>
+        </div>
+        <div class="cartao p-3" data-contador="concluidos" data-singular="concluído" data-plural="concluídos">
+          <p class="font-semibold" data-texto>0 concluídos</p>
+        </div>
+        <div class="cartao p-3" data-contador="conferir" data-singular="a conferir" data-plural="a conferir">
+          <p class="font-semibold" data-texto>0 a conferir</p>
+        </div>
+      </div>
+
+      <div data-aviso-conferir hidden>
+        <button type="button" class="btn btn-primario" data-concluir-todos>Concluir todos (<span data-conta-conferir>0</span>)</button>
+      </div>
+
+      <div class="rounded-xl border border-dashed border-borda p-8 text-center">
+        <p class="titulo text-lg">Nenhum atendimento neste dia.</p>
+        <div class="mt-4"><a href="novo-agendamento.html" class="btn btn-primario"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg> Novo agendamento</a></div>
+      </div>
+    </div>
+    </div>
+  </main>
+</div>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZeitVez · Site e agenda online para salões e barbearias</title>
+  <meta name="description" content="Site próprio e agendamento online para salões de beleza e barbearias.">
+  <script>try{var t=localStorage.getItem('zeitvez-tema');if(t)document.documentElement.dataset.tema=t}catch(e){}</script>
+  <link rel="stylesheet" href="assets/fontes.css">
+  <link rel="stylesheet" href="assets/zeitvez.css">
+  <link rel="stylesheet" href="assets/vitrine.css">
+  <script defer src="assets/telas.js"></script>
+  <script defer src="assets/app.js"></script>
+</head>
+<body class="min-h-screen bg-fundo font-corpo text-texto antialiased" data-raiz="">
+<a href="#conteudo" class="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-50 focus:rounded-tema focus:bg-fundo focus:px-4 focus:py-2 focus:font-semibold focus:text-texto focus:shadow-lg">Pular para o conteúdo</a>
+<header class="sticky top-0 z-40 border-b border-borda bg-fundo">
+  <div class="relative mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
+    <a href="index.html" class="flex items-center gap-2.5">
+        <span class="inline-flex h-9 w-9 items-center justify-center rounded-tema bg-primaria text-sobre-primaria"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/><path d="M19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg></span>
+        <span class="titulo whitespace-nowrap text-lg">ZeitVez</span>
+      </a>
+    <nav class="hidden items-center gap-6 text-sm font-semibold lg:flex" aria-label="Principal">
+      <a href="#beneficios" class="text-suave hover:text-texto">Benefícios</a>
+      <a href="#como-funciona" class="text-suave hover:text-texto">Como funciona</a>
+      <a href="#demonstracao" class="text-suave hover:text-texto">Demonstração</a>
+      <a href="#contato" class="text-suave hover:text-texto">Contato</a>
+    </nav>
+    <div class="flex shrink-0 items-center gap-2">
+      <button type="button" class="btn btn-fantasma h-11 w-11 px-0" data-alternar-tema>
+          <span class="tema-icone-lua sr-only">Alternar para tema escuro</span>
+          <span class="tema-icone-sol sr-only">Alternar para tema claro</span>
+          <span class="tema-icone-lua" aria-hidden="true"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg></span>
+          <span class="tema-icone-sol" aria-hidden="true"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span>
+        </button>
+        <span aria-live="polite" class="sr-only" data-tema-anuncio></span>
+      <div class="lg:hidden">
+        <button type="button" class="btn btn-fantasma h-11 w-11 px-0" data-menu-botao aria-controls="menu-mobile" aria-expanded="false" aria-label="Abrir menu"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      </div>
+    </div>
+    <nav id="menu-mobile" hidden aria-label="Menu" class="absolute inset-x-0 top-full border-b border-borda bg-fundo px-4 pb-4 pt-2 shadow-sm lg:hidden">
+      <ul>
+        <li><a href="#beneficios" class="block rounded-tema px-2 py-3 font-semibold hover:bg-superficie-2">Benefícios</a></li>
+        <li><a href="#como-funciona" class="block rounded-tema px-2 py-3 font-semibold hover:bg-superficie-2">Como funciona</a></li>
+        <li><a href="#demonstracao" class="block rounded-tema px-2 py-3 font-semibold hover:bg-superficie-2">Demonstração</a></li>
+        <li><a href="#contato" class="block rounded-tema px-2 py-3 font-semibold hover:bg-superficie-2">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo" tabindex="-1" class="outline-none">
+  <section class="mx-auto grid max-w-6xl items-center gap-12 px-4 pb-16 pt-12 sm:px-6 lg:grid-cols-2 lg:pt-20">
+    <div>
+      <p class="rotulo">Para salões e barbearias</p>
+      <h1 class="titulo mt-3 text-4xl sm:text-5xl lg:text-6xl">Site próprio e agenda online para o seu negócio.</h1>
+      <p class="mt-5 max-w-xl text-lg text-suave">Seus clientes agendam sozinhos, a qualquer hora, num site com a cara do seu salão ou barbearia. Você acompanha tudo num painel simples.</p>
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <a href="#demonstracao" class="btn btn-primario">Ver demonstração</a>
+      </div>
+      <ul class="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-suave">
+        <li class="flex items-center gap-2"><span class="text-primaria"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span> Sem instalar aplicativo</li>
+        <li class="flex items-center gap-2"><span class="text-primaria"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span> Pronto em poucos dias</li>
+      </ul>
+    </div>
+    <div class="mx-auto w-full max-w-md lg:max-w-none">
+      <div class="grid grid-cols-6 items-start gap-3">
+        <div aria-hidden="true" class="mini-salao select-none overflow-hidden rounded-2xl border shadow-lg col-span-4" style="border-color:#EADFD4;background-color:#FBF6F0;color:#2A1F1A;font-family:&#39;Lato&#39;, system-ui, sans-serif">
+        <div class="p-4">
+          <div class="flex items-center justify-between gap-2">
+            <span class="flex min-w-0 items-center gap-2">
+              <span class="inline-flex h-7 w-7 shrink-0 items-center justify-center text-xs" style="font-family:&#39;Playfair Display&#39;, Georgia, serif;text-transform:none;letter-spacing:normal;font-weight:600;line-height:1.1;background-color:#A3502E;color:#FFFFFF;border-radius:999px;text-transform:none;letter-spacing:normal;text-transform:none;letter-spacing:normal">S</span>
+              <span class="break-words text-sm" style="font-family:&#39;Playfair Display&#39;, Georgia, serif;text-transform:none;letter-spacing:normal;font-weight:600;line-height:1.1">Studio Aurora</span>
+            </span>
+            <span class="mini-agendar shrink-0 px-2.5 py-1 text-[11px] font-semibold" style="background-color:#A3502E;color:#FFFFFF;border-radius:999px;text-transform:none;letter-spacing:normal">Agendar</span>
+          </div>
+          <div class="mt-3 aspect-[16/9]" style="border-radius:10px;background-image:radial-gradient(circle at 75% 20%, rgb(255 255 255 / 0.22), transparent 55%), linear-gradient(135deg, #E9C4A8, #B7694A)"></div>
+          <p class="mt-3 text-base" style="font-family:&#39;Playfair Display&#39;, Georgia, serif;text-transform:none;letter-spacing:normal;font-weight:600;line-height:1.1">Cabelo, cor e cuidado — sem pressa.</p>
+          <div class="mt-2 grid grid-cols-2 gap-2 text-[11px]">
+            <span class="border p-2" style="border-color:#EADFD4;background-color:#FFFFFF;border-radius:10px"><span class="block font-semibold">Corte e finalização</span><span style="color:#6B584D">R$ 120</span></span>
+            <span class="border p-2" style="border-color:#EADFD4;background-color:#FFFFFF;border-radius:10px"><span class="block font-semibold">Corte curto</span><span style="color:#6B584D">R$ 80</span></span>
+          </div>
+        </div>
+      </div>
+        <div aria-hidden="true" class="mini-salao select-none overflow-hidden rounded-2xl border shadow-lg col-span-4 col-start-3 -mt-24 sm:-mt-32" style="border-color:#2C2C31;background-color:#0E0E10;color:#F2EEE6;font-family:&#39;Barlow&#39;, system-ui, sans-serif">
+        <div class="p-4">
+          <div class="flex items-center justify-between gap-2">
+            <span class="flex min-w-0 items-center gap-2">
+              <span class="inline-flex h-7 w-7 shrink-0 items-center justify-center text-xs" style="font-family:&#39;Oswald&#39;, &#39;Arial Narrow&#39;, sans-serif;text-transform:uppercase;letter-spacing:.03em;font-weight:600;line-height:1.1;background-color:#D6A548;color:#15120C;border-radius:4px;text-transform:uppercase;letter-spacing:.06em;text-transform:none;letter-spacing:normal">B</span>
+              <span class="break-words text-sm" style="font-family:&#39;Oswald&#39;, &#39;Arial Narrow&#39;, sans-serif;text-transform:uppercase;letter-spacing:.03em;font-weight:600;line-height:1.1">Barbearia Navalha</span>
+            </span>
+            <span class="mini-agendar shrink-0 px-2.5 py-1 text-[11px] font-semibold" style="background-color:#D6A548;color:#15120C;border-radius:4px;text-transform:uppercase;letter-spacing:.06em">Agendar</span>
+          </div>
+          <div class="mt-3 aspect-[16/9]" style="border-radius:4px;background-image:radial-gradient(circle at 75% 20%, rgb(255 255 255 / 0.22), transparent 55%), linear-gradient(135deg, #3A3A40, #1C1C20)"></div>
+          <p class="mt-3 text-base" style="font-family:&#39;Oswald&#39;, &#39;Arial Narrow&#39;, sans-serif;text-transform:uppercase;letter-spacing:.03em;font-weight:600;line-height:1.1">Corte afiado. Barba alinhada.</p>
+          <div class="mt-2 grid grid-cols-2 gap-2 text-[11px]">
+            <span class="border p-2" style="border-color:#2C2C31;background-color:#17171A;border-radius:4px"><span class="block font-semibold">Corte clássico</span><span style="color:#A9A39A">R$ 55</span></span>
+            <span class="border p-2" style="border-color:#2C2C31;background-color:#17171A;border-radius:4px"><span class="block font-semibold">Corte + barba</span><span style="color:#A9A39A">R$ 95</span></span>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="beneficios" aria-labelledby="beneficios-titulo" class="scroll-mt-20 border-y border-borda bg-superficie">
+    <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+      <p class="rotulo">Benefícios</p>
+      <h2 id="beneficios-titulo" class="titulo mt-2 text-3xl sm:text-4xl">Menos mensagem, mais cadeira ocupada</h2>
+      <ul class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <li>
+          <span class="flex h-11 w-11 items-center justify-center rounded-tema bg-primaria-suave text-primaria"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span>
+          <h3 class="mt-4 text-lg font-bold">Site com a sua cara</h3>
+          <p class="mt-1 text-suave">Cores, fonte, logo e fotos do seu negócio. Nada de página genérica.</p>
+        </li>
+        <li>
+          <span class="flex h-11 w-11 items-center justify-center rounded-tema bg-primaria-suave text-primaria"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span>
+          <h3 class="mt-4 text-lg font-bold">Agenda aberta 24h</h3>
+          <p class="mt-1 text-suave">O cliente escolhe serviço, profissional e horário — sem trocar 20 mensagens.</p>
+        </li>
+        <li>
+          <span class="flex h-11 w-11 items-center justify-center rounded-tema bg-primaria-suave text-primaria"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></span>
+          <h3 class="mt-4 text-lg font-bold">Feito para o celular</h3>
+          <p class="mt-1 text-suave">Funciona bem no celular do cliente e no seu, sem instalar nada.</p>
+        </li>
+        <li>
+          <span class="flex h-11 w-11 items-center justify-center rounded-tema bg-primaria-suave text-primaria"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6.5 6.5 0 0 1 3.5 6"/></svg></span>
+          <h3 class="mt-4 text-lg font-bold">Equipe organizada</h3>
+          <p class="mt-1 text-suave">Cada profissional com seus serviços, dias e horários.</p>
+        </li>
+        <li>
+          <span class="flex h-11 w-11 items-center justify-center rounded-tema bg-primaria-suave text-primaria"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 14.5c-2 0-3.5 1.5-3.5 3.5 0 1.5-1 2.5-3 3 4 1 9 0 9-4 0-1.4-1.1-2.5-2.5-2.5z"/><path d="M11 13l9.5-9.5M14 10l-3-3"/></svg></span>
+          <h3 class="mt-4 text-lg font-bold">Você muda sozinho</h3>
+          <p class="mt-1 text-suave">Preços, fotos e horários atualizados pelo painel, quando quiser.</p>
+        </li>
+        <li>
+          <span class="flex h-11 w-11 items-center justify-center rounded-tema bg-primaria-suave text-primaria"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10v10h16V10M3 6l2-3h14l2 3v2a3 3 0 0 1-6 0 3 3 0 0 1-6 0 3 3 0 0 1-6 0V6z"/><path d="M10 20v-5h4v5"/></svg></span>
+          <h3 class="mt-4 text-lg font-bold">Seu endereço</h3>
+          <p class="mt-1 text-suave">seunegocio.zeitvez.com ou o seu próprio domínio .com.br.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="como-funciona" aria-labelledby="como-funciona-titulo" class="mx-auto max-w-6xl scroll-mt-20 px-4 py-16 sm:px-6">
+    <p class="rotulo">Como funciona</p>
+    <h2 id="como-funciona-titulo" class="titulo mt-2 text-3xl sm:text-4xl">Três passos até o primeiro agendamento</h2>
+    <ol class="mt-10 grid gap-4 md:grid-cols-3">
+      <li class="cartao p-6">
+        <span aria-hidden="true" class="titulo text-4xl text-primaria">1</span>
+        <h3 class="mt-3 text-lg font-bold">Conversa rápida</h3>
+        <p class="mt-1 text-suave">Entendemos seus serviços, equipe e horários.</p>
+      </li>
+      <li class="cartao p-6">
+        <span aria-hidden="true" class="titulo text-4xl text-primaria">2</span>
+        <h3 class="mt-3 text-lg font-bold">Montamos seu site</h3>
+        <p class="mt-1 text-suave">Com sua identidade visual. Você revisa e ajusta no painel.</p>
+      </li>
+      <li class="cartao p-6">
+        <span aria-hidden="true" class="titulo text-4xl text-primaria">3</span>
+        <h3 class="mt-3 text-lg font-bold">Divulgue o link</h3>
+        <p class="mt-1 text-suave">Coloque no Instagram e no WhatsApp e receba agendamentos.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section id="demonstracao" aria-labelledby="demonstracao-titulo" class="scroll-mt-20 border-y border-borda bg-superficie-2">
+    <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+      <p class="rotulo">Demonstração</p>
+      <h2 id="demonstracao-titulo" class="titulo mt-2 text-3xl sm:text-4xl">Mesmo sistema, identidades diferentes</h2>
+      <p class="mt-2 max-w-2xl text-suave">Três negócios fictícios usando exatamente o mesmo layout. Só mudam cores, fontes e conteúdo.</p>
+      <ul class="mt-10 grid gap-6 md:grid-cols-3">
+        <li class="flex flex-col">
+          <div aria-hidden="true" class="mini-salao select-none overflow-hidden rounded-2xl border shadow-lg " style="border-color:#EADFD4;background-color:#FBF6F0;color:#2A1F1A;font-family:&#39;Lato&#39;, system-ui, sans-serif">
+        <div class="p-4">
+          <div class="flex items-center justify-between gap-2">
+            <span class="flex min-w-0 items-center gap-2">
+              <span class="inline-flex h-7 w-7 shrink-0 items-center justify-center text-xs" style="font-family:&#39;Playfair Display&#39;, Georgia, serif;text-transform:none;letter-spacing:normal;font-weight:600;line-height:1.1;background-color:#A3502E;color:#FFFFFF;border-radius:999px;text-transform:none;letter-spacing:normal;text-transform:none;letter-spacing:normal">S</span>
+              <span class="break-words text-sm" style="font-family:&#39;Playfair Display&#39;, Georgia, serif;text-transform:none;letter-spacing:normal;font-weight:600;line-height:1.1">Studio Aurora</span>
+            </span>
+            <span class="mini-agendar shrink-0 px-2.5 py-1 text-[11px] font-semibold" style="background-color:#A3502E;color:#FFFFFF;border-radius:999px;text-transform:none;letter-spacing:normal">Agendar</span>
+          </div>
+          <div class="mt-3 aspect-[16/9]" style="border-radius:10px;background-image:radial-gradient(circle at 75% 20%, rgb(255 255 255 / 0.22), transparent 55%), linear-gradient(135deg, #E9C4A8, #B7694A)"></div>
+          <p class="mt-3 text-base" style="font-family:&#39;Playfair Display&#39;, Georgia, serif;text-transform:none;letter-spacing:normal;font-weight:600;line-height:1.1">Cabelo, cor e cuidado — sem pressa.</p>
+          <div class="mt-2 grid grid-cols-2 gap-2 text-[11px]">
+            <span class="border p-2" style="border-color:#EADFD4;background-color:#FFFFFF;border-radius:10px"><span class="block font-semibold">Corte e finalização</span><span style="color:#6B584D">R$ 120</span></span>
+            <span class="border p-2" style="border-color:#EADFD4;background-color:#FFFFFF;border-radius:10px"><span class="block font-semibold">Corte curto</span><span style="color:#6B584D">R$ 80</span></span>
+          </div>
+        </div>
+      </div>
+          <div class="mt-4 flex-1">
+            <h3 class="text-lg font-bold">Studio Aurora</h3>
+            <p class="text-sm text-suave">Salão de beleza · Tema claro · tons quentes · serifada</p>
+          </div>
+          <a href="aurora/index.html" class="btn btn-primario btn-sm mt-4 w-full">Ver site<span class="sr-only">: Studio Aurora</span></a>
+        </li>
+        <li class="flex flex-col">
+          <div aria-hidden="true" class="mini-salao select-none overflow-hidden rounded-2xl border shadow-lg " style="border-color:#2C2C31;background-color:#0E0E10;color:#F2EEE6;font-family:&#39;Barlow&#39;, system-ui, sans-serif">
+        <div class="p-4">
+          <div class="flex items-center justify-between gap-2">
+            <span class="flex min-w-0 items-center gap-2">
+              <span class="inline-flex h-7 w-7 shrink-0 items-center justify-center text-xs" style="font-family:&#39;Oswald&#39;, &#39;Arial Narrow&#39;, sans-serif;text-transform:uppercase;letter-spacing:.03em;font-weight:600;line-height:1.1;background-color:#D6A548;color:#15120C;border-radius:4px;text-transform:uppercase;letter-spacing:.06em;text-transform:none;letter-spacing:normal">B</span>
+              <span class="break-words text-sm" style="font-family:&#39;Oswald&#39;, &#39;Arial Narrow&#39;, sans-serif;text-transform:uppercase;letter-spacing:.03em;font-weight:600;line-height:1.1">Barbearia Navalha</span>
+            </span>
+            <span class="mini-agendar shrink-0 px-2.5 py-1 text-[11px] font-semibold" style="background-color:#D6A548;color:#15120C;border-radius:4px;text-transform:uppercase;letter-spacing:.06em">Agendar</span>
+          </div>
+          <div class="mt-3 aspect-[16/9]" style="border-radius:4px;background-image:radial-gradient(circle at 75% 20%, rgb(255 255 255 / 0.22), transparent 55%), linear-gradient(135deg, #3A3A40, #1C1C20)"></div>
+          <p class="mt-3 text-base" style="font-family:&#39;Oswald&#39;, &#39;Arial Narrow&#39;, sans-serif;text-transform:uppercase;letter-spacing:.03em;font-weight:600;line-height:1.1">Corte afiado. Barba alinhada.</p>
+          <div class="mt-2 grid grid-cols-2 gap-2 text-[11px]">
+            <span class="border p-2" style="border-color:#2C2C31;background-color:#17171A;border-radius:4px"><span class="block font-semibold">Corte clássico</span><span style="color:#A9A39A">R$ 55</span></span>
+            <span class="border p-2" style="border-color:#2C2C31;background-color:#17171A;border-radius:4px"><span class="block font-semibold">Corte + barba</span><span style="color:#A9A39A">R$ 95</span></span>
+          </div>
+        </div>
+      </div>
+          <div class="mt-4 flex-1">
+            <h3 class="text-lg font-bold">Barbearia Navalha</h3>
+            <p class="text-sm text-suave">Barbearia · Tema escuro · dourado · condensada</p>
+          </div>
+          <a href="navalha/index.html" class="btn btn-primario btn-sm mt-4 w-full">Ver site<span class="sr-only">: Barbearia Navalha</span></a>
+        </li>
+        <li class="flex flex-col">
+          <div aria-hidden="true" class="mini-salao select-none overflow-hidden rounded-2xl border shadow-lg " style="border-color:#D3E2E8;background-color:#F2F7F9;color:#0E2430;font-family:&#39;Manrope&#39;, system-ui, sans-serif">
+        <div class="p-4">
+          <div class="flex items-center justify-between gap-2">
+            <span class="flex min-w-0 items-center gap-2">
+              <span class="inline-flex h-7 w-7 shrink-0 items-center justify-center text-xs" style="font-family:&#39;Manrope&#39;, system-ui, sans-serif;text-transform:none;letter-spacing:-0.02em;font-weight:800;line-height:1.1;background-color:#0D7285;color:#FFFFFF;border-radius:12px;text-transform:none;letter-spacing:normal;text-transform:none;letter-spacing:normal">E</span>
+              <span class="break-words text-sm" style="font-family:&#39;Manrope&#39;, system-ui, sans-serif;text-transform:none;letter-spacing:-0.02em;font-weight:800;line-height:1.1">Espaço Lumi</span>
+            </span>
+            <span class="mini-agendar shrink-0 px-2.5 py-1 text-[11px] font-semibold" style="background-color:#0D7285;color:#FFFFFF;border-radius:12px;text-transform:none;letter-spacing:normal">Agendar</span>
+          </div>
+          <div class="mt-3 aspect-[16/9]" style="border-radius:12px;background-image:radial-gradient(circle at 75% 20%, rgb(255 255 255 / 0.22), transparent 55%), linear-gradient(135deg, #A9D8E2, #5A9FB3)"></div>
+          <p class="mt-3 text-base" style="font-family:&#39;Manrope&#39;, system-ui, sans-serif;text-transform:none;letter-spacing:-0.02em;font-weight:800;line-height:1.1">Cuidado leve, para todo mundo.</p>
+          <div class="mt-2 grid grid-cols-2 gap-2 text-[11px]">
+            <span class="border p-2" style="border-color:#D3E2E8;background-color:#FFFFFF;border-radius:12px"><span class="block font-semibold">Corte</span><span style="color:#4A6270">R$ 90</span></span>
+            <span class="border p-2" style="border-color:#D3E2E8;background-color:#FFFFFF;border-radius:12px"><span class="block font-semibold">Coloração</span><span style="color:#4A6270">R$ 210</span></span>
+          </div>
+        </div>
+      </div>
+          <div class="mt-4 flex-1">
+            <h3 class="text-lg font-bold">Espaço Lumi</h3>
+            <p class="text-sm text-suave">Salão de beleza · Tema claro · paleta fria · sem serifa</p>
+          </div>
+          <a href="lumi/index.html" class="btn btn-primario btn-sm mt-4 w-full">Ver site<span class="sr-only">: Espaço Lumi</span></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contato" aria-labelledby="contato-titulo" class="mx-auto w-full max-w-6xl scroll-mt-20 px-4 py-16 sm:px-6">
+    <div class="cartao grid gap-8 p-6 sm:p-10 lg:grid-cols-2 lg:items-center">
+      <div>
+        <p class="rotulo">Contato</p>
+        <h2 id="contato-titulo" class="titulo mt-2 text-3xl sm:text-4xl">Quer ver com o seu negócio?</h2>
+        <p class="mt-3 text-suave">Mande uma mensagem com o nome do seu salão ou barbearia. A gente mostra como ficaria e conta os valores.</p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <p class="text-center text-sm text-suave">Preço sob consulta.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="border-t border-borda">
+  <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-6 gap-y-1 px-4 py-8 text-sm text-suave sm:px-6">
+    <span>© 2026 ZeitVez</span>
+    <a href="entrar.html" rel="nofollow" class="inline-flex min-h-11 items-center text-xs underline-offset-4 hover:text-texto hover:underline">Acesso restrito</a>
+  </div>
+</footer>
+</body>
+</html>

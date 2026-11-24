@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aparência · Painel · Barbearia Navalha</title>
+  <link rel="stylesheet" href="../../assets/fontes.css">
+  <link rel="stylesheet" href="../tema.css">
+  <link rel="stylesheet" href="../../assets/vitrine.css">
+  <script defer src="../../assets/telas.js"></script>
+  <script defer src="../../assets/app.js"></script>
+</head>
+<body class="min-h-screen bg-fundo font-corpo text-texto antialiased" data-raiz="../../">
+<a href="#conteudo" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:rounded-tema focus:bg-superficie focus:px-3 focus:py-2">Pular para o conteúdo</a>
+<div class="flex min-h-screen flex-col lg:flex-row">
+  <aside class="border-b border-borda bg-superficie px-4 py-4 lg:sticky lg:top-0 lg:h-screen lg:w-64 lg:shrink-0 lg:self-start lg:overflow-y-auto lg:border-b-0 lg:border-r">
+    <div class="flex items-center gap-3 px-1 lg:px-2">
+      <span class="monograma">B</span>
+      <div class="min-w-0">
+        <p class="titulo truncate text-lg leading-tight">Barbearia Navalha</p>
+        <p class="text-xs text-suave">Painel do estabelecimento</p>
+      </div>
+    </div>
+    <div class="mt-4 lg:mt-6">
+      <nav aria-label="Painel" class="flex flex-wrap gap-1 lg:flex-col">
+        <a href="agenda.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Agenda</a>
+        <a href="bloqueios.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Bloqueios</a>
+        <a href="site.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Meu site</a>
+        <a href="servicos.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Serviços</a>
+        <a href="equipe.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Equipe</a>
+        <a href="horario.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Horário</a>
+        <a href="aparencia.html" aria-current="page" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none bg-primaria-suave text-texto">Aparência</a>
+        <a href="regras.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Regras de agendamento</a>
+      </nav>
+    </div>
+    <div class="mt-4 flex flex-wrap items-center gap-2 border-t border-borda pt-4 lg:flex-col lg:items-stretch">
+      <a href="../index.html" class="inline-flex min-h-11 items-center gap-2 rounded-tema px-3 text-sm font-semibold text-suave hover:bg-superficie-2 hover:text-texto"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg> Ver meu site</a>
+      <a href="../index.html" class="inline-flex min-h-11 items-center gap-2 rounded-tema px-3 text-sm font-semibold text-suave hover:bg-superficie-2 hover:text-texto"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h10"/></svg> Sair</a>
+    </div>
+  </aside>
+
+  <main id="conteudo" tabindex="-1" class="min-w-0 flex-1 px-4 pb-20 pt-6 outline-none sm:px-8 sm:pt-8">
+    <div class="mx-auto max-w-3xl">
+
+    <header class="mb-6">
+      <h1 class="titulo text-3xl sm:text-4xl">Aparência</h1>
+      <p class="mt-1 text-suave">As cores e a fonte do seu site. Veja a prévia antes de salvar.</p>
+    </header>
+    <div class="cartao p-5 sm:p-7"><div class="grid gap-8 lg:grid-cols-2">
+        <form class="space-y-6" action="aparencia.html" data-ir="aparencia.html" novalidate>
+
+          <div class="space-y-1.5">
+          <label class="campo-rotulo !mb-0" for="primaryColor">Cor principal</label>
+          <div class="flex items-center gap-3">
+            <input type="color" aria-label="Cor principal: escolher no seletor de cores" value="#d6a548" data-tema-var="--cor-primaria" class="h-11 w-14 shrink-0 cursor-pointer rounded-tema border border-borda bg-campo p-1">
+            <input class="campo max-w-40 font-mono uppercase" id="primaryColor" name="primaryColor" value="#D6A548" maxlength="7" spellcheck="false" autocomplete="off" data-hex-de="--cor-primaria" aria-describedby="primaryColor-ajuda">
+          </div>
+          <p id="primaryColor-ajuda" class="text-sm text-suave">Botões, destaques e links do site. Formato #RRGGBB.</p>
+        </div>
+          <div class="space-y-1.5">
+          <label class="campo-rotulo !mb-0" for="secondaryColor">Cor de apoio</label>
+          <div class="flex items-center gap-3">
+            <input type="color" aria-label="Cor de apoio: escolher no seletor de cores" value="#9e3b2f" data-tema-var="--cor-secundaria" class="h-11 w-14 shrink-0 cursor-pointer rounded-tema border border-borda bg-campo p-1">
+            <input class="campo max-w-40 font-mono uppercase" id="secondaryColor" name="secondaryColor" value="#9E3B2F" maxlength="7" spellcheck="false" autocomplete="off" data-hex-de="--cor-secundaria" aria-describedby="secondaryColor-ajuda">
+          </div>
+          <p id="secondaryColor-ajuda" class="text-sm text-suave">Detalhes e a capa do site. Formato #RRGGBB.</p>
+        </div>
+          <div class="space-y-1.5">
+          <label class="campo-rotulo !mb-0" for="fontKey">Fonte</label>
+          <select class="campo" id="fontKey" name="fontKey" data-tema-fonte aria-describedby="fontKey-ajuda">
+            <option value="serifada" data-titulo="&#39;Playfair Display&#39;, Georgia, serif" data-corpo="&#39;Lato&#39;, system-ui, sans-serif" data-caixa="none">Playfair Display + Lato</option>
+            <option value="cormorant" data-titulo="&#39;Cormorant Garamond&#39;, Georgia, serif" data-corpo="&#39;Mulish&#39;, system-ui, sans-serif" data-caixa="none">Cormorant Garamond + Mulish</option>
+            <option value="baskerville" data-titulo="&#39;Libre Baskerville&#39;, Georgia, serif" data-corpo="&#39;Source Sans 3&#39;, system-ui, sans-serif" data-caixa="none">Libre Baskerville + Source Sans 3</option>
+            <option value="sem-serifa" data-titulo="&#39;Manrope&#39;, system-ui, sans-serif" data-corpo="&#39;Manrope&#39;, system-ui, sans-serif" data-caixa="none">Manrope</option>
+            <option value="outfit" data-titulo="&#39;Outfit&#39;, system-ui, sans-serif" data-corpo="&#39;Outfit&#39;, system-ui, sans-serif" data-caixa="none">Outfit</option>
+            <option value="fraunces" data-titulo="&#39;Fraunces&#39;, Georgia, serif" data-corpo="&#39;Inter&#39;, system-ui, sans-serif" data-caixa="none">Fraunces + Inter</option>
+            <option value="condensada" selected data-titulo="&#39;Oswald&#39;, &#39;Arial Narrow&#39;, sans-serif" data-corpo="&#39;Barlow&#39;, system-ui, sans-serif" data-caixa="uppercase">Oswald + Barlow</option>
+            <option value="barlow-condensada" data-titulo="&#39;Barlow Condensed&#39;, &#39;Arial Narrow&#39;, sans-serif" data-corpo="&#39;Barlow&#39;, system-ui, sans-serif" data-caixa="uppercase">Barlow Condensed + Barlow</option>
+            <option value="josefin" data-titulo="&#39;Josefin Sans&#39;, system-ui, sans-serif" data-corpo="&#39;Nunito Sans&#39;, system-ui, sans-serif" data-caixa="none">Josefin Sans + Nunito Sans</option>
+            <option value="quicksand" data-titulo="&#39;Quicksand&#39;, system-ui, sans-serif" data-corpo="&#39;Nunito&#39;, system-ui, sans-serif" data-caixa="none">Quicksand + Nunito</option>
+            <option value="jakarta" data-titulo="&#39;Plus Jakarta Sans&#39;, system-ui, sans-serif" data-corpo="&#39;Plus Jakarta Sans&#39;, system-ui, sans-serif" data-caixa="none">Plus Jakarta Sans</option>
+          </select>
+          <p id="fontKey-ajuda" class="text-sm text-suave">O par de fontes dos títulos e dos textos.</p>
+        </div>
+          <fieldset role="radiogroup" class="space-y-2">
+            <legend class="text-sm font-semibold">Modo</legend>
+            <div class="flex gap-3">
+              <label class="opcao flex h-11 flex-1 cursor-pointer items-center justify-center px-4 text-sm font-semibold"><input type="radio" name="colorMode" value="claro" class="sr-only" data-tema-modo="{&quot;--esquema&quot;:&quot;light&quot;,&quot;--cor-fundo&quot;:&quot;#FAFAF8&quot;,&quot;--cor-superficie&quot;:&quot;#FFFFFF&quot;,&quot;--cor-superficie-2&quot;:&quot;#F2F2EF&quot;,&quot;--cor-campo&quot;:&quot;#FFFFFF&quot;,&quot;--cor-texto&quot;:&quot;#1C1C1C&quot;,&quot;--cor-texto-suave&quot;:&quot;#5C5C5C&quot;,&quot;--cor-borda&quot;:&quot;#E3E3DE&quot;,&quot;--cor-borda-forte&quot;:&quot;#C6C6BF&quot;,&quot;--cor-sucesso-fundo&quot;:&quot;#E6F4EA&quot;,&quot;--cor-sucesso-texto&quot;:&quot;#1B6B38&quot;,&quot;--cor-sucesso-borda&quot;:&quot;#BEDFC9&quot;,&quot;--cor-alerta-fundo&quot;:&quot;#FFF4DB&quot;,&quot;--cor-alerta-texto&quot;:&quot;#855600&quot;,&quot;--cor-alerta-borda&quot;:&quot;#EFD79C&quot;,&quot;--cor-erro-fundo&quot;:&quot;#FCE9E7&quot;,&quot;--cor-erro-texto&quot;:&quot;#A1251A&quot;,&quot;--cor-erro-borda&quot;:&quot;#EFC3BD&quot;,&quot;--cor-azul-fundo&quot;:&quot;#E6EEFB&quot;,&quot;--cor-azul-texto&quot;:&quot;#1D4E9E&quot;,&quot;--cor-azul-borda&quot;:&quot;#BCD0F0&quot;,&quot;--cor-roxo-fundo&quot;:&quot;#F1EAFB&quot;,&quot;--cor-roxo-texto&quot;:&quot;#5B2D9E&quot;,&quot;--cor-roxo-borda&quot;:&quot;#D9C6F2&quot;}">Claro</label>
+              <label class="opcao flex h-11 flex-1 cursor-pointer items-center justify-center px-4 text-sm font-semibold"><input type="radio" name="colorMode" value="escuro" class="sr-only" data-tema-modo="{&quot;--esquema&quot;:&quot;dark&quot;,&quot;--cor-fundo&quot;:&quot;#0E0E10&quot;,&quot;--cor-superficie&quot;:&quot;#17171A&quot;,&quot;--cor-superficie-2&quot;:&quot;#202024&quot;,&quot;--cor-campo&quot;:&quot;#121214&quot;,&quot;--cor-texto&quot;:&quot;#F2EEE6&quot;,&quot;--cor-texto-suave&quot;:&quot;#A9A39A&quot;,&quot;--cor-borda&quot;:&quot;#2C2C31&quot;,&quot;--cor-borda-forte&quot;:&quot;#45454C&quot;,&quot;--cor-sucesso-fundo&quot;:&quot;#11301E&quot;,&quot;--cor-sucesso-texto&quot;:&quot;#86DFAA&quot;,&quot;--cor-sucesso-borda&quot;:&quot;#1F4F33&quot;,&quot;--cor-alerta-fundo&quot;:&quot;#33280F&quot;,&quot;--cor-alerta-texto&quot;:&quot;#F2C66B&quot;,&quot;--cor-alerta-borda&quot;:&quot;#5A4516&quot;,&quot;--cor-erro-fundo&quot;:&quot;#3A1614&quot;,&quot;--cor-erro-texto&quot;:&quot;#F7A196&quot;,&quot;--cor-erro-borda&quot;:&quot;#62261F&quot;,&quot;--cor-azul-fundo&quot;:&quot;#13233F&quot;,&quot;--cor-azul-texto&quot;:&quot;#93B9F5&quot;,&quot;--cor-azul-borda&quot;:&quot;#24406B&quot;,&quot;--cor-roxo-fundo&quot;:&quot;#2A1A40&quot;,&quot;--cor-roxo-texto&quot;:&quot;#C9A8F5&quot;,&quot;--cor-roxo-borda&quot;:&quot;#4A2E70&quot;}" checked>Escuro</label>
+            </div>
+          </fieldset>
+          <button type="submit" class="btn btn-primario">Salvar aparência</button>
+      </form>
+        <div class="space-y-3 lg:sticky lg:top-6 lg:self-start">
+          <h2 class="titulo text-xl">Prévia</h2>
+          <p class="text-sm text-suave">É assim que o site ficará. Nada muda até você salvar.</p>
+          <div id="preview-tema" aria-hidden="true" class="overflow-hidden rounded-xl border border-borda bg-fundo font-corpo text-texto" style="color-scheme: var(--esquema)">
+            <div class="flex items-center justify-between gap-3 border-b border-borda bg-superficie px-4 py-3">
+              <div class="flex min-w-0 items-center gap-2.5"><span class="monograma h-9 w-9 text-base">B</span><span class="titulo truncate text-lg">Barbearia Navalha</span></div>
+              <span class="text-sm font-semibold underline underline-offset-4" style="color: var(--cor-primaria-forte, var(--cor-primaria))">Entrar</span>
+            </div>
+            <div class="space-y-4 p-5">
+              <div class="space-y-2">
+                <p class="titulo text-2xl">Cuidado de verdade, com hora marcada</p>
+                <p class="text-sm text-suave">Um texto de exemplo para ver como a letra e as cores ficam no seu site.</p>
+              </div>
+              <span class="btn btn-primario">Agendar horário</span>
+              <div class="cartao space-y-1 p-4">
+                <p class="font-semibold">Corte e escova</p>
+                <p class="text-sm text-suave">1 hora · a partir de R$ 120,00</p>
+                <p class="pt-1 text-sm font-semibold underline underline-offset-4" style="color: var(--cor-primaria-forte, var(--cor-primaria))">Ver detalhes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div></div>
+    </div>
+  </main>
+</div>
+</body>
+</html>

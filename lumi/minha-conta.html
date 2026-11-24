@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minha conta · Espaço Lumi</title>
+  <meta name="description" content="Corte, cor, terapia capilar, sobrancelhas e unhas no centro de Florianópolis. Um espaço acolhedor para todas as pessoas.">
+  <link rel="stylesheet" href="../assets/fontes.css">
+  <link rel="stylesheet" href="tema.css">
+  <link rel="stylesheet" href="../assets/vitrine.css">
+  <script defer src="../assets/telas.js"></script>
+  <script defer src="../assets/app.js"></script>
+</head>
+<body class="min-h-screen bg-fundo font-corpo text-texto antialiased" data-raiz="../">
+<a href="#conteudo" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:rounded-tema focus:bg-superficie focus:px-3 focus:py-2">Pular para o conteúdo</a>
+<header class="sticky top-0 z-40 border-b border-borda bg-fundo">
+  <div class="relative mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
+    <a href="index.html" class="flex min-w-0 items-center gap-3">
+      <span class="monograma">E</span>
+      <span class="titulo break-words text-lg sm:text-xl">Espaço Lumi</span>
+    </a>
+    <nav class="hidden items-center gap-6 text-sm font-semibold lg:flex" aria-label="Principal">
+      <a href="index.html#sobre" class="text-suave hover:text-texto">Sobre</a>
+      <a href="index.html#horario" class="text-suave hover:text-texto">Horário</a>
+      <a href="index.html#contato" class="text-suave hover:text-texto">Contato</a>
+    </nav>
+    <div class="flex shrink-0 items-center gap-2">
+      <div class="hidden sm:block">
+        <div class="relative" data-menu-suspenso>
+            <button type="button" class="btn btn-fantasma btn-sm gap-2" aria-expanded="false" aria-haspopup="menu" aria-controls="menu-conta"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg> Olá, Alex <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+            <div id="menu-conta" role="menu" class="menu-suspenso" hidden>
+              <a role="menuitem" href="minha-conta.html">Minha conta</a>
+              <a role="menuitem" href="meus-agendamentos.html">Meus agendamentos</a>
+              <a role="menuitem" href="index.html">Sair</a>
+            </div>
+          </div>
+      </div>
+      <a href="agendar-profissional.html" class="btn btn-primario btn-sm hidden sm:inline-flex">Agendar horário</a>
+      <div class="lg:hidden">
+        <button type="button" class="btn btn-fantasma h-11 w-11 px-0" data-menu-botao aria-controls="menu-mobile" aria-expanded="false" aria-label="Abrir menu"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      </div>
+    </div>
+    <nav id="menu-mobile" hidden aria-label="Menu" class="absolute inset-x-0 top-full border-b border-borda bg-fundo px-4 pb-4 pt-2 shadow-sm lg:hidden">
+      <a href="agendar-profissional.html" class="btn btn-primario btn-bloco my-2">Agendar horário</a>
+      <ul>
+        <li><a href="index.html#sobre" class="block rounded-tema px-2 py-3 font-semibold hover:bg-superficie-2">Sobre</a></li>
+        <li><a href="index.html#horario" class="block rounded-tema px-2 py-3 font-semibold hover:bg-superficie-2">Horário</a></li>
+        <li><a href="index.html#contato" class="block rounded-tema px-2 py-3 font-semibold hover:bg-superficie-2">Contato</a></li>
+        <li><a href="minha-conta.html" class="block rounded-tema px-2 py-3 font-semibold hover:bg-superficie-2">Minha conta</a></li>
+        <li><a href="meus-agendamentos.html" class="block rounded-tema px-2 py-3 font-semibold hover:bg-superficie-2">Meus agendamentos</a></li>
+        <li><a href="index.html" class="block w-full rounded-tema px-2 py-3 text-left font-semibold hover:bg-superficie-2">Sair</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="conteudo" tabindex="-1" class="outline-none">
+
+<div class="mx-auto w-full max-w-2xl px-4 pb-16 pt-8 sm:px-6 sm:pt-12">
+  <h1 class="titulo text-3xl sm:text-4xl">Minha conta</h1>
+  <p class="mt-1 text-suave">Sua conta vale para Espaço Lumi.</p>
+  <div class="mt-8 space-y-6">
+    <section class="cartao p-5 sm:p-6">
+      <h2 class="titulo text-xl">Dados pessoais</h2>
+      
+      <div class="mt-5"><form class="space-y-5" action="minha-conta.html" data-ir="minha-conta.html" novalidate>
+      <div class="space-y-1.5">
+        <div class="flex flex-wrap items-end justify-between gap-x-3 gap-y-1">
+          <label class="campo-rotulo !mb-0" for="pf-nome">Nome</label>
+        </div>
+        <input class="campo" id="pf-nome" type="text" autocomplete="name" value="Alex Souza">
+        
+      </div>
+      <div class="space-y-1.5">
+        <div class="flex flex-wrap items-end justify-between gap-x-3 gap-y-1">
+          <label class="campo-rotulo !mb-0" for="pf-tel">Celular (WhatsApp)</label>
+        </div>
+        <input class="campo" id="pf-tel" type="tel" autocomplete="tel-national" value="(48) 98888-1234">
+        
+      </div>
+      <div class="space-y-1.5">
+        <div class="flex flex-wrap items-end justify-between gap-x-3 gap-y-1">
+          <label class="campo-rotulo !mb-0" for="pf-email">E-mail (usado para entrar)</label>
+        </div>
+        <input class="campo" id="pf-email" type="email" value="alex.souza@email.com" readonly aria-describedby="pf-email-ajuda">
+        <p id="pf-email-ajuda" class="text-sm text-suave">O e-mail não pode ser alterado.</p>
+      </div>
+      <div class="flex justify-end"><button type="submit" class="btn btn-primario">Salvar dados</button></div>
+    </form></div>
+    </section>
+    <section class="cartao p-5 sm:p-6">
+      <h2 class="titulo text-xl">Senha</h2>
+      
+      <div class="mt-5"><form class="space-y-5" action="minha-conta.html" data-ir="minha-conta.html" novalidate>
+      <div class="space-y-1.5">
+        <div class="flex flex-wrap items-end justify-between gap-x-3 gap-y-1">
+          <label class="campo-rotulo !mb-0" for="pw-atual">Senha atual</label>
+        </div>
+        <input class="campo" id="pw-atual" type="password" autocomplete="current-password">
+        
+      </div>
+      <div class="space-y-1.5">
+        <div class="flex flex-wrap items-end justify-between gap-x-3 gap-y-1">
+          <label class="campo-rotulo !mb-0" for="pw-nova">Nova senha</label>
+        </div>
+        <input class="campo" id="pw-nova" type="password" autocomplete="new-password" aria-describedby="pw-nova-ajuda">
+        <p id="pw-nova-ajuda" class="text-sm text-suave">Mínimo de 8 caracteres. Os outros aparelhos conectados saem da conta.</p>
+      </div>
+      <div class="space-y-1.5">
+        <div class="flex flex-wrap items-end justify-between gap-x-3 gap-y-1">
+          <label class="campo-rotulo !mb-0" for="pw-repita">Repita a nova senha</label>
+        </div>
+        <input class="campo" id="pw-repita" type="password" autocomplete="new-password">
+        
+      </div>
+      <div class="flex justify-end"><button type="submit" class="btn btn-primario">Alterar senha</button></div>
+    </form></div>
+    </section>
+    <section class="cartao p-5 sm:p-6">
+      <h2 class="titulo text-xl">Sair</h2>
+      <p class="mt-1 text-sm text-suave">Encerra a sessão neste aparelho.</p>
+      <div class="mt-5"><a href="index.html" class="btn btn-secundario"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h10"/></svg> Sair</a></div>
+    </section>
+    <section class="cartao p-5 sm:p-6">
+      <h2 class="titulo text-xl">Seus dados e privacidade</h2>
+      <p class="mt-1 text-sm text-suave">Você pode excluir sua conta a qualquer momento (LGPD). Veja a <a class="link" href="privacidade.html">política de privacidade</a>.</p>
+      <div class="mt-5"><button type="button" class="btn btn-perigo" data-abrir-dialogo="dlg-excluir"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg> Excluir minha conta</button></div>
+    </section>
+  </div>
+</div>
+<dialog id="dlg-excluir" class="dialogo">
+  <div class="grid gap-4 p-6">
+    <h2 class="titulo text-xl">Excluir sua conta?</h2>
+    <p class="text-sm text-suave">Seus dados pessoais serão apagados. Espaço Lumi mantém só o que a lei obriga (por exemplo, registros fiscais). Não dá para desfazer.</p>
+    <div class="space-y-1.5">
+        <div class="flex flex-wrap items-end justify-between gap-x-3 gap-y-1">
+          <label class="campo-rotulo !mb-0" for="ex-senha">Digite sua senha para confirmar</label>
+        </div>
+        <input class="campo" id="ex-senha" type="password" autocomplete="current-password">
+        
+      </div>
+    <div class="flex flex-col-reverse gap-2 sm:flex-row sm:justify-end">
+      <button type="button" class="btn btn-secundario" data-fechar-dialogo>Manter conta</button>
+      <a href="index.html?conta=excluida" class="btn btn-primario" style="background: var(--cor-erro-texto); color: var(--cor-fundo)">Excluir conta</a>
+    </div>
+  </div>
+</dialog>
+</main>
+
+<footer class="mt-16 border-t border-borda bg-superficie">
+  <div class="mx-auto grid max-w-6xl gap-8 px-4 py-10 sm:grid-cols-2 sm:px-6 lg:grid-cols-3">
+    <div>
+      <div class="flex items-center gap-3"><span class="monograma">E</span><span class="titulo break-words text-lg">Espaço Lumi</span></div>
+      <p class="mt-3 text-sm text-suave">Cuidado leve, para todo mundo.</p>
+    </div>
+    <div class="text-sm">
+      <h2 class="titulo mb-3 text-base">Endereço</h2>
+      <p class="text-suave">Rua Bocaiúva, 455 — Centro, Florianópolis - SC</p>
+    </div>
+    <div class="text-sm">
+      <h2 class="titulo mb-3 text-base">Horário</h2>
+      <ul class="space-y-1 text-suave">
+        <li class="flex justify-between gap-4"><span>Segunda a sexta</span><span class="num">9h às 19h</span></li>
+        <li class="flex justify-between gap-4"><span>Sábado</span><span class="num">9h às 15h</span></li>
+        <li class="flex justify-between gap-4"><span>Domingo</span><span class="num">Fechado</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-borda">
+    <div class="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-5 text-xs text-suave sm:flex-row sm:items-center sm:justify-between sm:px-6">
+      <span>© 2026 Espaço Lumi</span>
+      <nav aria-label="Informações legais" class="flex flex-wrap items-center gap-x-4">
+        <a href="termos.html" class="inline-flex min-h-11 items-center text-sm underline-offset-4 hover:text-texto hover:underline">Termos de uso</a>
+        <a href="privacidade.html" class="inline-flex min-h-11 items-center text-sm underline-offset-4 hover:text-texto hover:underline">Política de privacidade</a>
+      </nav>
+      <span class="font-semibold">Feito com ZeitVez</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

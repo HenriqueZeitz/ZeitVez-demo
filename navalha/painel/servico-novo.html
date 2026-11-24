@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Novo serviço · Painel · Barbearia Navalha</title>
+  <link rel="stylesheet" href="../../assets/fontes.css">
+  <link rel="stylesheet" href="../tema.css">
+  <link rel="stylesheet" href="../../assets/vitrine.css">
+  <script defer src="../../assets/telas.js"></script>
+  <script defer src="../../assets/app.js"></script>
+</head>
+<body class="min-h-screen bg-fundo font-corpo text-texto antialiased" data-raiz="../../">
+<a href="#conteudo" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:rounded-tema focus:bg-superficie focus:px-3 focus:py-2">Pular para o conteúdo</a>
+<div class="flex min-h-screen flex-col lg:flex-row">
+  <aside class="border-b border-borda bg-superficie px-4 py-4 lg:sticky lg:top-0 lg:h-screen lg:w-64 lg:shrink-0 lg:self-start lg:overflow-y-auto lg:border-b-0 lg:border-r">
+    <div class="flex items-center gap-3 px-1 lg:px-2">
+      <span class="monograma">B</span>
+      <div class="min-w-0">
+        <p class="titulo truncate text-lg leading-tight">Barbearia Navalha</p>
+        <p class="text-xs text-suave">Painel do estabelecimento</p>
+      </div>
+    </div>
+    <div class="mt-4 lg:mt-6">
+      <nav aria-label="Painel" class="flex flex-wrap gap-1 lg:flex-col">
+        <a href="agenda.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Agenda</a>
+        <a href="bloqueios.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Bloqueios</a>
+        <a href="site.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Meu site</a>
+        <a href="servicos.html" aria-current="page" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none bg-primaria-suave text-texto">Serviços</a>
+        <a href="equipe.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Equipe</a>
+        <a href="horario.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Horário</a>
+        <a href="aparencia.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Aparência</a>
+        <a href="regras.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Regras de agendamento</a>
+      </nav>
+    </div>
+    <div class="mt-4 flex flex-wrap items-center gap-2 border-t border-borda pt-4 lg:flex-col lg:items-stretch">
+      <a href="../index.html" class="inline-flex min-h-11 items-center gap-2 rounded-tema px-3 text-sm font-semibold text-suave hover:bg-superficie-2 hover:text-texto"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg> Ver meu site</a>
+      <a href="../index.html" class="inline-flex min-h-11 items-center gap-2 rounded-tema px-3 text-sm font-semibold text-suave hover:bg-superficie-2 hover:text-texto"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h10"/></svg> Sair</a>
+    </div>
+  </aside>
+
+  <main id="conteudo" tabindex="-1" class="min-w-0 flex-1 px-4 pb-20 pt-6 outline-none sm:px-8 sm:pt-8">
+    <div class="mx-auto max-w-3xl">
+
+    <header class="mb-6">
+      <h1 class="titulo text-3xl sm:text-4xl">Novo serviço</h1>
+      <p class="mt-1 text-suave">Preencha os dados do serviço. Ele entra no fim da lista e já aparece no seu site. Você pode enviar a foto depois de criar.</p>
+    </header>
+    <div class="cartao p-5 sm:p-7"><form class="space-y-6" action="servicos.html" data-ir="servicos.html" novalidate>
+
+        <div class="space-y-1.5">
+          <label class="campo-rotulo !mb-0" for="name">Nome do serviço</label>
+          <input class="campo" id="name" name="name" type="text" autocomplete="off" aria-describedby="name-ajuda">
+          <p id="name-ajuda" class="text-sm text-suave">Ex.: Corte e finalização. Até 80 caracteres, sem repetir o nome de outro serviço.</p>
+        </div>
+        <div class="space-y-1.5">
+          <label class="campo-rotulo !mb-0" for="description">Descrição (opcional)</label>
+          <textarea class="campo" id="description" name="description" rows="3" aria-describedby="description-ajuda"></textarea>
+          <p id="description-ajuda" class="text-sm text-suave">Uma frase curta que aparece no site, embaixo do nome.</p>
+        </div>
+        <div class="grid gap-5 sm:grid-cols-2">
+          <div class="space-y-1.5">
+          <label class="campo-rotulo !mb-0" for="durationMinutes">Duração, em minutos</label>
+          <input class="campo" id="durationMinutes" name="durationMinutes" type="text" autocomplete="off" aria-describedby="durationMinutes-ajuda">
+          <p id="durationMinutes-ajuda" class="text-sm text-suave">De 5 a 600 minutos. Ex.: 60.</p>
+        </div>
+          <div class="space-y-1.5">
+          <label class="campo-rotulo !mb-0" for="price">Preço, em reais</label>
+          <input class="campo" id="price" name="price" type="text" autocomplete="off" aria-describedby="price-ajuda">
+          <p id="price-ajuda" class="text-sm text-suave">Ex.: 45 ou 45,00.</p>
+        </div>
+        </div>
+        <div class="flex items-start gap-3 text-sm">
+          <input type="checkbox" class="caixa-marcar mt-0.5" id="priceIsFrom" name="priceIsFrom">
+          <div><label for="priceIsFrom" class="font-medium">Mostrar “a partir de” no preço</label><p class="text-suave">Use quando o valor varia, como na coloração: o site mostra “a partir de” antes do preço.</p></div>
+        </div>
+        <div class="flex flex-wrap gap-3">
+          <button type="submit" class="btn btn-primario">Salvar</button>
+          <a href="servicos.html" class="btn btn-secundario">Voltar</a>
+        </div>
+      </form></div>
+    </div>
+  </main>
+</div>
+</body>
+</html>

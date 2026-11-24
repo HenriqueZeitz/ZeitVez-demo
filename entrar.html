@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entrar · ZeitVez</title>
+  <script>try{var t=localStorage.getItem('zeitvez-tema');if(t)document.documentElement.dataset.tema=t}catch(e){}</script>
+  <link rel="stylesheet" href="assets/fontes.css">
+  <link rel="stylesheet" href="assets/zeitvez.css">
+  <link rel="stylesheet" href="assets/vitrine.css">
+  <script defer src="assets/telas.js"></script>
+  <script defer src="assets/app.js"></script>
+</head>
+<body class="min-h-screen bg-fundo font-corpo text-texto antialiased" data-raiz="">
+<a href="#conteudo" class="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-50 focus:rounded-tema focus:bg-fundo focus:px-4 focus:py-2 focus:font-semibold focus:text-texto focus:shadow-lg">Pular para o conteúdo</a>
+<header class="border-b border-borda bg-fundo">
+  <div class="mx-auto flex max-w-6xl items-center px-4 py-3 sm:px-6">
+    <a href="index.html" class="flex items-center gap-2.5">
+        <span class="inline-flex h-9 w-9 items-center justify-center rounded-tema bg-primaria text-sobre-primaria"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/><path d="M19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg></span>
+        <span class="titulo whitespace-nowrap text-lg">ZeitVez</span>
+      </a>
+  </div>
+</header>
+<main id="conteudo" tabindex="-1" class="outline-none">
+
+<div class="mx-auto w-full max-w-md px-4 py-10 sm:py-16">
+  <div class="text-center">
+    <h1 class="titulo text-3xl sm:text-4xl">Entrar</h1>
+    <p class="mt-2 text-suave">Acesso da equipe do ZeitVez.</p>
+  </div>
+  <div class="cartao mt-8 p-5 shadow-sm sm:p-7">
+    <form class="space-y-5" action="admin/index.html" data-ir="admin/index.html" novalidate>
+      <div class="space-y-1.5">
+        <div class="flex flex-wrap items-end justify-between gap-x-3 gap-y-1">
+          <label class="campo-rotulo !mb-0" for="login-email">E-mail</label>
+        </div>
+        <input class="campo" id="login-email" type="email" autocomplete="username" placeholder="voce@email.com">
+        
+      </div>
+      <div class="space-y-1.5">
+        <div class="flex flex-wrap items-end justify-between gap-x-3 gap-y-1">
+          <label class="campo-rotulo !mb-0" for="login-senha">Senha</label><a href="#" class="link font-semibold" style="text-decoration: none" data-toast="Demonstração: a recuperação de senha não faz parte desta vitrine.">Esqueci minha senha</a>
+        </div>
+        <input class="campo" id="login-senha" type="password" autocomplete="current-password">
+        
+      </div>
+      <div class="flex items-start gap-3 text-sm">
+        <input type="checkbox" class="caixa-marcar mt-0.5" id="manter" checked>
+        <div><label for="manter" class="font-medium">Manter conectado neste aparelho</label><p class="text-suave">Você não precisa digitar a senha de novo por 90 dias. Desmarque em aparelhos de outras pessoas.</p></div>
+      </div>
+      <button class="btn btn-primario btn-bloco" type="submit">Entrar</button>
+    </form>
+  </div>
+  <p class="mt-6 text-center text-sm"><a href="index.html" class="text-suave underline-offset-4 hover:text-texto hover:underline">Voltar para o site</a></p>
+</div>
+</main>
+</body>
+</html>

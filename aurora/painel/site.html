@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meu site · Painel · Studio Aurora</title>
+  <link rel="stylesheet" href="../../assets/fontes.css">
+  <link rel="stylesheet" href="../tema.css">
+  <link rel="stylesheet" href="../../assets/vitrine.css">
+  <script defer src="../../assets/telas.js"></script>
+  <script defer src="../../assets/app.js"></script>
+</head>
+<body class="min-h-screen bg-fundo font-corpo text-texto antialiased" data-raiz="../../">
+<a href="#conteudo" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:rounded-tema focus:bg-superficie focus:px-3 focus:py-2">Pular para o conteúdo</a>
+<div class="flex min-h-screen flex-col lg:flex-row">
+  <aside class="border-b border-borda bg-superficie px-4 py-4 lg:sticky lg:top-0 lg:h-screen lg:w-64 lg:shrink-0 lg:self-start lg:overflow-y-auto lg:border-b-0 lg:border-r">
+    <div class="flex items-center gap-3 px-1 lg:px-2">
+      <span class="monograma">S</span>
+      <div class="min-w-0">
+        <p class="titulo truncate text-lg leading-tight">Studio Aurora</p>
+        <p class="text-xs text-suave">Painel do estabelecimento</p>
+      </div>
+    </div>
+    <div class="mt-4 lg:mt-6">
+      <nav aria-label="Painel" class="flex flex-wrap gap-1 lg:flex-col">
+        <a href="agenda.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Agenda</a>
+        <a href="bloqueios.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Bloqueios</a>
+        <a href="site.html" aria-current="page" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none bg-primaria-suave text-texto">Meu site</a>
+        <a href="servicos.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Serviços</a>
+        <a href="equipe.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Equipe</a>
+        <a href="horario.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Horário</a>
+        <a href="aparencia.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Aparência</a>
+        <a href="regras.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Regras de agendamento</a>
+      </nav>
+    </div>
+    <div class="mt-4 flex flex-wrap items-center gap-2 border-t border-borda pt-4 lg:flex-col lg:items-stretch">
+      <a href="../index.html" class="inline-flex min-h-11 items-center gap-2 rounded-tema px-3 text-sm font-semibold text-suave hover:bg-superficie-2 hover:text-texto"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg> Ver meu site</a>
+      <a href="../index.html" class="inline-flex min-h-11 items-center gap-2 rounded-tema px-3 text-sm font-semibold text-suave hover:bg-superficie-2 hover:text-texto"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h10"/></svg> Sair</a>
+    </div>
+  </aside>
+
+  <main id="conteudo" tabindex="-1" class="min-w-0 flex-1 px-4 pb-20 pt-6 outline-none sm:px-8 sm:pt-8">
+    <div class="mx-auto max-w-3xl">
+
+    <header class="mb-6">
+      <h1 class="titulo text-3xl sm:text-4xl">Meu site</h1>
+      <p class="mt-1 text-suave">Os textos e os contatos que aparecem na página do seu salão.</p>
+    </header>
+    <div class="cartao p-5 sm:p-7">
+        <h2 class="titulo text-xl">Logo e capa</h2>
+        <p class="mb-4 mt-1 text-sm text-suave">As imagens do seu site. Sem logo, aparece a inicial do nome; sem capa, um fundo com as cores do site.</p>
+        <div class="grid gap-4 lg:grid-cols-2">
+          <div class="flex flex-col gap-4 sm:flex-row sm:items-start">
+        <div class="flex shrink-0 items-center justify-center overflow-hidden rounded-tema border border-borda bg-superficie-2 h-24 w-24"><span class="px-2 text-center text-xs text-suave">Sem logo</span></div>
+        <div class="min-w-0 flex-1 space-y-1.5">
+          <label class="campo-rotulo !mb-0" for="logo">Logo</label>
+          <input class="campo" id="logo" type="file" accept="image/jpeg,image/png,image/webp" aria-describedby="logo-ajuda">
+          <p id="logo-ajuda" class="text-sm text-suave">JPEG, PNG ou WebP, até 5 MB. Fundo transparente funciona melhor (PNG ou WebP). Aparece pequeno, no topo e no rodapé.</p>
+          <div class="pt-1.5"><button type="button" class="btn btn-secundario">Enviar</button></div>
+        </div>
+      </div>
+          <div class="flex flex-col gap-4 sm:flex-row sm:items-start">
+        <div class="flex shrink-0 items-center justify-center overflow-hidden rounded-tema border border-borda bg-superficie-2 aspect-[4/5] w-24"><span class="px-2 text-center text-xs text-suave">Sem capa</span></div>
+        <div class="min-w-0 flex-1 space-y-1.5">
+          <label class="campo-rotulo !mb-0" for="capa">Capa</label>
+          <input class="campo" id="capa" type="file" accept="image/jpeg,image/png,image/webp" aria-describedby="capa-ajuda">
+          <p id="capa-ajuda" class="text-sm text-suave">JPEG, PNG ou WebP, até 5 MB. Uma foto em pé funciona melhor (proporção 4:5). Se for larga, as pontas podem ser cortadas na exibição.</p>
+          <div class="pt-1.5"><button type="button" class="btn btn-secundario">Enviar</button></div>
+        </div>
+      </div>
+        </div></div>
+    <div class="h-6" aria-hidden="true"></div>
+    <div class="cartao p-5 sm:p-7"><form class="space-y-6" action="site.html" data-ir="site.html" novalidate>
+
+        <fieldset class="space-y-5">
+          <legend class="titulo mb-1 text-xl">O salão</legend>
+          <div class="space-y-1.5">
+          <label class="campo-rotulo !mb-0" for="name">Nome do salão</label>
+          <input class="campo" id="name" name="name" type="text" autocomplete="off" value="Studio Aurora" aria-describedby="name-ajuda">
+          <p id="name-ajuda" class="text-sm text-suave">De 2 a 80 caracteres.</p>
+        </div>
+          <div class="space-y-1.5">
+          <label class="campo-rotulo !mb-0" for="tagline">Frase de destaque</label>
+          <input class="campo" id="tagline" name="tagline" type="text" autocomplete="off" value="Cabelo, cor e cuidado — sem pressa." aria-describedby="tagline-ajuda">
+          <p id="tagline-ajuda" class="text-sm text-suave">A frase grande do topo do site. Até 60 caracteres.</p>
+        </div>
+          <div class="space-y-1.5">
+          <label class="campo-rotulo !mb-0" for="heroText">Texto do topo</label>
+          <textarea class="campo" id="heroText" name="heroText" rows="3" aria-describedby="heroText-ajuda">Cortes, coloração e tratamentos para todos os tipos de cabelo, num espaço tranquilo na Vila Madalena. Agende online em menos de um minuto.</textarea>
+          <p id="heroText-ajuda" class="text-sm text-suave">Uma apresentação curta, logo abaixo da frase de destaque.</p>
+        </div>
+          <div class="space-y-1.5">
+          <label class="campo-rotulo !mb-0" for="aboutText">Sobre</label>
+          <textarea class="campo" id="aboutText" name="aboutText" rows="6" aria-describedby="aboutText-ajuda">O Studio Aurora nasceu em 2016 com uma ideia simples: atender com hora marcada, para ninguém precisar esperar. Café passado na hora, música baixa e um time que conversa antes de pegar na tesoura.
+
+Trabalhamos com marcas veganas e atendemos todos os tipos e comprimentos de cabelo — do corte curto ao alongamento de mechas.</textarea>
+          <p id="aboutText-ajuda" class="text-sm text-suave">Opcional. Deixe uma linha em branco entre um parágrafo e outro.</p>
+        </div>
+          <div class="space-y-1.5">
+          <label class="campo-rotulo !mb-0" for="highlights">Destaques</label>
+          <textarea class="campo" id="highlights" name="highlights" rows="5" aria-describedby="highlights-ajuda">Desde 2016
+Produtos veganos
+Café e Wi-Fi
+Acessível</textarea>
+          <p id="highlights-ajuda" class="text-sm text-suave">Opcional. Um por linha, até 6 destaques de até 40 caracteres (ex.: Desde 2016, Café e Wi-Fi).</p>
+        </div>
+          <div class="space-y-1.5">
+          <label class="campo-rotulo !mb-0" for="coverCaption">Legenda da capa</label>
+          <input class="campo" id="coverCaption" name="coverCaption" type="text" autocomplete="off" value="Nosso espaço" aria-describedby="coverCaption-ajuda">
+          <p id="coverCaption-ajuda" class="text-sm text-suave">Opcional. Aparece sobre a foto de capa e descreve a imagem. Até 80 caracteres.</p>
+        </div>
+        </fieldset>
+        <fieldset class="space-y-5">
+          <legend class="titulo mb-1 text-xl">Contato</legend>
+          <div class="space-y-1.5">
+          <label class="campo-rotulo !mb-0" for="phone">Telefone</label>
+          <input class="campo" id="phone" name="phone" type="tel" autocomplete="off" value="(11) 3000-0101" aria-describedby="phone-ajuda">
+          <p id="phone-ajuda" class="text-sm text-suave">Com DDD, ex.: (11) 3000-0101. Opcional.</p>
+        </div>
+          <div class="space-y-1.5">
+          <label class="campo-rotulo !mb-0" for="whatsapp">WhatsApp</label>
+          <input class="campo" id="whatsapp" name="whatsapp" type="tel" autocomplete="off" value="(11) 90000-0101" aria-describedby="whatsapp-ajuda">
+          <p id="whatsapp-ajuda" class="text-sm text-suave">Com DDD, ex.: (11) 90000-0101. É o botão principal do site. Opcional.</p>
+        </div>
+          <div class="space-y-1.5">
+          <label class="campo-rotulo !mb-0" for="email">E-mail</label>
+          <input class="campo" id="email" name="email" type="email" autocomplete="off" value="contato@studioaurora.com.br" aria-describedby="email-ajuda">
+          <p id="email-ajuda" class="text-sm text-suave">Opcional.</p>
+        </div>
+          <div class="space-y-1.5">
+          <label class="campo-rotulo !mb-0" for="instagram">Instagram</label>
+          <input class="campo" id="instagram" name="instagram" type="text" autocomplete="off" value="@studioaurora" aria-describedby="instagram-ajuda">
+          <p id="instagram-ajuda" class="text-sm text-suave">O usuário (@studioaurora) ou o link do perfil. Opcional.</p>
+        </div>
+        </fieldset>
+        <fieldset class="space-y-5">
+          <legend class="titulo mb-1 text-xl">Endereço</legend>
+          <div class="space-y-1.5">
+          <label class="campo-rotulo !mb-0" for="addressLine">Endereço</label>
+          <input class="campo" id="addressLine" name="addressLine" type="text" autocomplete="off" value="Rua das Acácias, 120 — Vila Madalena" aria-describedby="addressLine-ajuda">
+          <p id="addressLine-ajuda" class="text-sm text-suave">Rua, número e bairro. Opcional, até 150 caracteres.</p>
+        </div>
+          <div class="grid gap-5 sm:grid-cols-[1fr_8rem]">
+            <div class="space-y-1.5">
+          <label class="campo-rotulo !mb-0" for="city">Cidade</label>
+          <input class="campo" id="city" name="city" type="text" autocomplete="off" value="São Paulo">
+          
+        </div>
+            <div class="space-y-1.5">
+          <label class="campo-rotulo !mb-0" for="state">UF</label>
+          <select class="campo" id="state" name="state">
+            <option value="">—</option>
+            <option value="AC">AC</option>
+            <option value="AL">AL</option>
+            <option value="AP">AP</option>
+            <option value="AM">AM</option>
+            <option value="BA">BA</option>
+            <option value="CE">CE</option>
+            <option value="DF">DF</option>
+            <option value="ES">ES</option>
+            <option value="GO">GO</option>
+            <option value="MA">MA</option>
+            <option value="MT">MT</option>
+            <option value="MS">MS</option>
+            <option value="MG">MG</option>
+            <option value="PA">PA</option>
+            <option value="PB">PB</option>
+            <option value="PR">PR</option>
+            <option value="PE">PE</option>
+            <option value="PI">PI</option>
+            <option value="RJ">RJ</option>
+            <option value="RN">RN</option>
+            <option value="RS">RS</option>
+            <option value="RO">RO</option>
+            <option value="RR">RR</option>
+            <option value="SC">SC</option>
+            <option value="SP" selected>SP</option>
+            <option value="SE">SE</option>
+            <option value="TO">TO</option>
+          </select>
+          
+        </div>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn btn-primario">Salvar alterações</button>
+      </form></div>
+    </div>
+  </main>
+</div>
+</body>
+</html>

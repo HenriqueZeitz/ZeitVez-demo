@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Serviços · Painel · Barbearia Navalha</title>
+  <link rel="stylesheet" href="../../assets/fontes.css">
+  <link rel="stylesheet" href="../tema.css">
+  <link rel="stylesheet" href="../../assets/vitrine.css">
+  <script defer src="../../assets/telas.js"></script>
+  <script defer src="../../assets/app.js"></script>
+</head>
+<body class="min-h-screen bg-fundo font-corpo text-texto antialiased" data-raiz="../../">
+<a href="#conteudo" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:rounded-tema focus:bg-superficie focus:px-3 focus:py-2">Pular para o conteúdo</a>
+<div class="flex min-h-screen flex-col lg:flex-row">
+  <aside class="border-b border-borda bg-superficie px-4 py-4 lg:sticky lg:top-0 lg:h-screen lg:w-64 lg:shrink-0 lg:self-start lg:overflow-y-auto lg:border-b-0 lg:border-r">
+    <div class="flex items-center gap-3 px-1 lg:px-2">
+      <span class="monograma">B</span>
+      <div class="min-w-0">
+        <p class="titulo truncate text-lg leading-tight">Barbearia Navalha</p>
+        <p class="text-xs text-suave">Painel do estabelecimento</p>
+      </div>
+    </div>
+    <div class="mt-4 lg:mt-6">
+      <nav aria-label="Painel" class="flex flex-wrap gap-1 lg:flex-col">
+        <a href="agenda.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Agenda</a>
+        <a href="bloqueios.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Bloqueios</a>
+        <a href="site.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Meu site</a>
+        <a href="servicos.html" aria-current="page" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none bg-primaria-suave text-texto">Serviços</a>
+        <a href="equipe.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Equipe</a>
+        <a href="horario.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Horário</a>
+        <a href="aparencia.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Aparência</a>
+        <a href="regras.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Regras de agendamento</a>
+      </nav>
+    </div>
+    <div class="mt-4 flex flex-wrap items-center gap-2 border-t border-borda pt-4 lg:flex-col lg:items-stretch">
+      <a href="../index.html" class="inline-flex min-h-11 items-center gap-2 rounded-tema px-3 text-sm font-semibold text-suave hover:bg-superficie-2 hover:text-texto"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg> Ver meu site</a>
+      <a href="../index.html" class="inline-flex min-h-11 items-center gap-2 rounded-tema px-3 text-sm font-semibold text-suave hover:bg-superficie-2 hover:text-texto"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h10"/></svg> Sair</a>
+    </div>
+  </aside>
+
+  <main id="conteudo" tabindex="-1" class="min-w-0 flex-1 px-4 pb-20 pt-6 outline-none sm:px-8 sm:pt-8">
+    <div class="mx-auto max-w-3xl">
+
+    <header class="mb-6">
+      <h1 class="titulo text-3xl sm:text-4xl">Serviços</h1>
+      <p class="mt-1 text-suave">Os serviços que o salão oferece, na ordem em que aparecem no site. Um serviço desativado sai do site, mas fica aqui para reativar.</p>
+    </header>
+    <div class="space-y-5">
+      <div role="status" aria-live="polite" class="rounded-tema text-sm"></div>
+      <a href="servico-novo.html" class="btn btn-primario"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg> Novo serviço</a>
+      <ul class="space-y-3">
+        <li class="cartao p-4 sm:p-5">
+          <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <div class="min-w-0">
+              <div class="flex flex-wrap items-center gap-2"><h2 class="titulo break-words text-lg">Corte clássico</h2></div>
+              <p class="mt-1 text-sm text-suave">40 min · R$ 55</p>
+            </div>
+            <div class="flex flex-wrap gap-2 md:shrink-0 md:justify-end">
+              <a href="servico.html" class="btn btn-secundario" aria-label="Editar Corte clássico">Editar</a>
+              <button type="button" class="btn btn-secundario" aria-label="Descer Corte clássico">Descer</button>
+              <button type="button" class="btn btn-secundario" aria-label="Desativar Corte clássico">Desativar</button>
+            </div>
+          </div>
+        </li>
+        <li class="cartao p-4 sm:p-5">
+          <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <div class="min-w-0">
+              <div class="flex flex-wrap items-center gap-2"><h2 class="titulo break-words text-lg">Corte + barba</h2></div>
+              <p class="mt-1 text-sm text-suave">1h10 · R$ 95</p>
+            </div>
+            <div class="flex flex-wrap gap-2 md:shrink-0 md:justify-end">
+              <a href="servico.html" class="btn btn-secundario" aria-label="Editar Corte + barba">Editar</a>
+              <button type="button" class="btn btn-secundario" aria-label="Subir Corte + barba">Subir</button><button type="button" class="btn btn-secundario" aria-label="Descer Corte + barba">Descer</button>
+              <button type="button" class="btn btn-secundario" aria-label="Desativar Corte + barba">Desativar</button>
+            </div>
+          </div>
+        </li>
+        <li class="cartao p-4 sm:p-5">
+          <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <div class="min-w-0">
+              <div class="flex flex-wrap items-center gap-2"><h2 class="titulo break-words text-lg">Barba completa</h2></div>
+              <p class="mt-1 text-sm text-suave">30 min · R$ 45</p>
+            </div>
+            <div class="flex flex-wrap gap-2 md:shrink-0 md:justify-end">
+              <a href="servico.html" class="btn btn-secundario" aria-label="Editar Barba completa">Editar</a>
+              <button type="button" class="btn btn-secundario" aria-label="Subir Barba completa">Subir</button><button type="button" class="btn btn-secundario" aria-label="Descer Barba completa">Descer</button>
+              <button type="button" class="btn btn-secundario" aria-label="Desativar Barba completa">Desativar</button>
+            </div>
+          </div>
+        </li>
+        <li class="cartao p-4 sm:p-5">
+          <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <div class="min-w-0">
+              <div class="flex flex-wrap items-center gap-2"><h2 class="titulo break-words text-lg">Degradê (fade)</h2></div>
+              <p class="mt-1 text-sm text-suave">45 min · R$ 60</p>
+            </div>
+            <div class="flex flex-wrap gap-2 md:shrink-0 md:justify-end">
+              <a href="servico.html" class="btn btn-secundario" aria-label="Editar Degradê (fade)">Editar</a>
+              <button type="button" class="btn btn-secundario" aria-label="Subir Degradê (fade)">Subir</button><button type="button" class="btn btn-secundario" aria-label="Descer Degradê (fade)">Descer</button>
+              <button type="button" class="btn btn-secundario" aria-label="Desativar Degradê (fade)">Desativar</button>
+            </div>
+          </div>
+        </li>
+        <li class="cartao p-4 sm:p-5">
+          <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <div class="min-w-0">
+              <div class="flex flex-wrap items-center gap-2"><h2 class="titulo break-words text-lg">Pigmentação de barba</h2></div>
+              <p class="mt-1 text-sm text-suave">30 min · R$ 40</p>
+            </div>
+            <div class="flex flex-wrap gap-2 md:shrink-0 md:justify-end">
+              <a href="servico.html" class="btn btn-secundario" aria-label="Editar Pigmentação de barba">Editar</a>
+              <button type="button" class="btn btn-secundario" aria-label="Subir Pigmentação de barba">Subir</button><button type="button" class="btn btn-secundario" aria-label="Descer Pigmentação de barba">Descer</button>
+              <button type="button" class="btn btn-secundario" aria-label="Desativar Pigmentação de barba">Desativar</button>
+            </div>
+          </div>
+        </li>
+        <li class="cartao p-4 sm:p-5">
+          <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <div class="min-w-0">
+              <div class="flex flex-wrap items-center gap-2"><h2 class="titulo break-words text-lg">Sobrancelha</h2></div>
+              <p class="mt-1 text-sm text-suave">15 min · R$ 20</p>
+            </div>
+            <div class="flex flex-wrap gap-2 md:shrink-0 md:justify-end">
+              <a href="servico.html" class="btn btn-secundario" aria-label="Editar Sobrancelha">Editar</a>
+              <button type="button" class="btn btn-secundario" aria-label="Subir Sobrancelha">Subir</button>
+              <button type="button" class="btn btn-secundario" aria-label="Desativar Sobrancelha">Desativar</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </main>
+</div>
+</body>
+</html>

@@ -1,0 +1,177 @@
+/* Gerado por _gerador/gerar.mjs a partir de assets/fontes/fontes.json. Não edite à mão.
+   Só o subconjunto latino, em arquivos da própria pasta (licenças em fontes/LICENCAS.md). */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fontes/barlow-normal-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('fontes/barlow-normal-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('fontes/barlow-normal-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('fontes/barlow-normal-700.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('fontes/barlow-condensed-normal-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('fontes/barlow-condensed-normal-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('fontes/barlow-condensed-normal-700.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url('fontes/cormorant-garamond-normal-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 500 800;
+  font-display: swap;
+  src: url('fontes/fraunces-normal-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('fontes/inter-normal-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url('fontes/josefin-sans-normal-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fontes/lato-normal-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('fontes/lato-normal-700.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('fontes/libre-baskerville-normal-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('fontes/manrope-normal-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('fontes/mulish-normal-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('fontes/nunito-normal-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('fontes/nunito-sans-normal-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url('fontes/oswald-normal-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('fontes/outfit-normal-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url('fontes/playfair-display-italic-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url('fontes/playfair-display-normal-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('fontes/plus-jakarta-sans-normal-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url('fontes/quicksand-normal-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('fontes/source-sans-3-normal-400.woff2') format('woff2');
+}

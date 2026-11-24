@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Salões · ZeitVez Admin</title>
+  <script>try{var t=localStorage.getItem('zeitvez-tema');if(t)document.documentElement.dataset.tema=t}catch(e){}</script>
+  <link rel="stylesheet" href="../assets/fontes.css">
+  <link rel="stylesheet" href="../assets/zeitvez.css">
+  <link rel="stylesheet" href="../assets/vitrine.css">
+  <script defer src="../assets/telas.js"></script>
+  <script defer src="../assets/app.js"></script>
+</head>
+<body class="min-h-screen bg-fundo font-corpo text-texto antialiased" data-raiz="../">
+<a href="#conteudo" class="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-50 focus:rounded-tema focus:bg-fundo focus:px-4 focus:py-2 focus:font-semibold focus:text-texto focus:shadow-lg">Pular para o conteúdo</a>
+<header class="border-b border-borda bg-fundo">
+  <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-6 gap-y-2 px-4 py-3 sm:px-6">
+    <div class="flex items-center gap-6">
+      <a href="index.html" class="flex items-center gap-2.5">
+        <span class="inline-flex h-9 w-9 items-center justify-center rounded-tema bg-primaria text-sobre-primaria"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/><path d="M19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg></span>
+        <span class="titulo whitespace-nowrap text-lg">ZeitVez Admin</span>
+      </a>
+      <nav aria-label="Painel" class="flex items-center gap-4">
+        <a href="index.html" class="inline-flex min-h-11 items-center text-sm font-semibold text-primaria underline-offset-4 hover:underline">Salões</a>
+        <a href="configuracoes.html" class="inline-flex min-h-11 items-center text-sm font-semibold text-primaria underline-offset-4 hover:underline">Configurações</a>
+      </nav>
+    </div>
+    <a href="../index.html" class="btn btn-secundario gap-2 px-4"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h10"/></svg> Sair</a>
+  </div>
+</header>
+<main id="conteudo" tabindex="-1" class="mx-auto w-full max-w-6xl px-4 pb-16 pt-8 outline-none sm:px-6 sm:pt-10">
+
+<div data-lista-saloes>
+  <div class="flex flex-wrap items-center justify-between gap-3">
+    <h1 class="titulo text-3xl sm:text-4xl">Salões</h1>
+    <a href="novo.html" class="btn btn-primario gap-2 px-5"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg> Novo salão</a>
+  </div>
+
+  <div class="mt-6 space-y-4">
+    <form role="search" class="flex flex-wrap items-end gap-3" data-busca-form novalidate>
+      <div class="min-w-0 flex-1 basis-64 space-y-1.5">
+        <label for="busca" class="campo-rotulo !mb-0">Buscar por nome ou endereço</label>
+        <input id="busca" name="q" type="search" maxlength="80" class="campo" data-busca-campo>
+      </div>
+      <button type="submit" class="btn btn-secundario gap-2 px-5"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg> Buscar</button>
+    </form>
+    <nav aria-label="Filtrar por status">
+      <ul class="flex flex-wrap gap-2">
+        <li><a href="#" data-filtro-status="todos" aria-current="true" class="inline-flex h-11 items-center rounded-full border px-4 text-sm font-semibold border-primaria bg-primaria text-sobre-primaria">Todos</a></li>
+        <li><a href="#" data-filtro-status="ativo" class="inline-flex h-11 items-center rounded-full border px-4 text-sm font-semibold border-borda bg-superficie hover:bg-superficie-2">Ativos</a></li>
+        <li><a href="#" data-filtro-status="suspenso" class="inline-flex h-11 items-center rounded-full border px-4 text-sm font-semibold border-borda bg-superficie hover:bg-superficie-2">Suspensos</a></li>
+        <li><a href="#" data-filtro-status="cancelado" class="inline-flex h-11 items-center rounded-full border px-4 text-sm font-semibold border-borda bg-superficie hover:bg-superficie-2">Cancelados</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <p class="mt-6 text-sm text-suave" role="status" data-contagem data-total="5">5 salões</p>
+
+  <div class="mt-4 hidden overflow-hidden rounded-xl border border-borda md:block" data-tabela>
+    <table class="w-full text-left text-sm">
+      <caption class="sr-only">Salões cadastrados</caption>
+      <thead class="bg-superficie-2 text-suave">
+        <tr>
+          <th scope="col" class="px-4 py-3 font-semibold">Salão</th>
+          <th scope="col" class="px-4 py-3 font-semibold">Endereço</th>
+          <th scope="col" class="px-4 py-3 font-semibold">Status</th>
+          <th scope="col" class="px-4 py-3 font-semibold">Criado em</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-borda bg-superficie">
+        <tr data-salao data-status="ativo" data-busca="barbearia navalha navalha.localhost">
+          <td class="px-4 py-3">
+            <a href="salao.html" class="font-semibold text-primaria underline-offset-4 hover:underline">Barbearia Navalha</a>
+            <div class="text-suave">Barbearia</div>
+          </td>
+          <td class="break-all px-4 py-3">navalha.localhost</td>
+          <td class="px-4 py-3"><span class="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold bg-[#DCFCE7] text-[#14532D]">Ativo</span></td>
+          <td class="px-4 py-3">19/01/2026</td>
+        </tr>
+        <tr data-salao data-status="suspenso" data-busca="corte fino barbearia cortefino.localhost">
+          <td class="px-4 py-3">
+            <a href="salao.html" class="font-semibold text-primaria underline-offset-4 hover:underline">Corte Fino Barbearia</a>
+            <div class="text-suave">Barbearia</div>
+          </td>
+          <td class="break-all px-4 py-3">cortefino.localhost</td>
+          <td class="px-4 py-3"><span class="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold bg-[#FEF3C7] text-[#78350F]">Suspenso</span></td>
+          <td class="px-4 py-3">16/02/2026</td>
+        </tr>
+        <tr data-salao data-status="ativo" data-busca="espaço lumi lumi.localhost">
+          <td class="px-4 py-3">
+            <a href="salao.html" class="font-semibold text-primaria underline-offset-4 hover:underline">Espaço Lumi</a>
+            <div class="text-suave">Salão</div>
+          </td>
+          <td class="break-all px-4 py-3">lumi.localhost</td>
+          <td class="px-4 py-3"><span class="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold bg-[#DCFCE7] text-[#14532D]">Ativo</span></td>
+          <td class="px-4 py-3">02/02/2026</td>
+        </tr>
+        <tr data-salao data-status="cancelado" data-busca="salão tesoura de ouro tesoura.localhost">
+          <td class="px-4 py-3">
+            <a href="salao.html" class="font-semibold text-primaria underline-offset-4 hover:underline">Salão Tesoura de Ouro</a>
+            <div class="text-suave">Salão</div>
+          </td>
+          <td class="break-all px-4 py-3">tesoura.localhost</td>
+          <td class="px-4 py-3"><span class="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold bg-superficie-2 text-texto">Cancelado</span></td>
+          <td class="px-4 py-3">05/01/2026</td>
+        </tr>
+        <tr data-salao data-status="ativo" data-busca="studio aurora aurora.localhost">
+          <td class="px-4 py-3">
+            <a href="salao.html" class="font-semibold text-primaria underline-offset-4 hover:underline">Studio Aurora</a>
+            <div class="text-suave">Salão</div>
+          </td>
+          <td class="break-all px-4 py-3">aurora.localhost</td>
+          <td class="px-4 py-3"><span class="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold bg-[#DCFCE7] text-[#14532D]">Ativo</span></td>
+          <td class="px-4 py-3">12/01/2026</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <ul class="mt-4 space-y-3 md:hidden" data-cartoes>
+    <li data-salao data-status="ativo" data-busca="barbearia navalha navalha.localhost" class="rounded-xl border border-borda bg-superficie p-4">
+      <div class="flex items-start justify-between gap-3">
+        <a href="salao.html" class="font-semibold text-primaria underline-offset-4 hover:underline">Barbearia Navalha</a>
+        <span class="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold bg-[#DCFCE7] text-[#14532D]">Ativo</span>
+      </div>
+      <p class="mt-1 text-sm text-suave">Barbearia</p>
+      <dl class="mt-3 grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-sm">
+        <dt class="text-suave">Endereço</dt>
+        <dd class="break-all">navalha.localhost</dd>
+        <dt class="text-suave">Criado em</dt>
+        <dd>19/01/2026</dd>
+      </dl>
+    </li>
+    <li data-salao data-status="suspenso" data-busca="corte fino barbearia cortefino.localhost" class="rounded-xl border border-borda bg-superficie p-4">
+      <div class="flex items-start justify-between gap-3">
+        <a href="salao.html" class="font-semibold text-primaria underline-offset-4 hover:underline">Corte Fino Barbearia</a>
+        <span class="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold bg-[#FEF3C7] text-[#78350F]">Suspenso</span>
+      </div>
+      <p class="mt-1 text-sm text-suave">Barbearia</p>
+      <dl class="mt-3 grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-sm">
+        <dt class="text-suave">Endereço</dt>
+        <dd class="break-all">cortefino.localhost</dd>
+        <dt class="text-suave">Criado em</dt>
+        <dd>16/02/2026</dd>
+      </dl>
+    </li>
+    <li data-salao data-status="ativo" data-busca="espaço lumi lumi.localhost" class="rounded-xl border border-borda bg-superficie p-4">
+      <div class="flex items-start justify-between gap-3">
+        <a href="salao.html" class="font-semibold text-primaria underline-offset-4 hover:underline">Espaço Lumi</a>
+        <span class="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold bg-[#DCFCE7] text-[#14532D]">Ativo</span>
+      </div>
+      <p class="mt-1 text-sm text-suave">Salão</p>
+      <dl class="mt-3 grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-sm">
+        <dt class="text-suave">Endereço</dt>
+        <dd class="break-all">lumi.localhost</dd>
+        <dt class="text-suave">Criado em</dt>
+        <dd>02/02/2026</dd>
+      </dl>
+    </li>
+    <li data-salao data-status="cancelado" data-busca="salão tesoura de ouro tesoura.localhost" class="rounded-xl border border-borda bg-superficie p-4">
+      <div class="flex items-start justify-between gap-3">
+        <a href="salao.html" class="font-semibold text-primaria underline-offset-4 hover:underline">Salão Tesoura de Ouro</a>
+        <span class="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold bg-superficie-2 text-texto">Cancelado</span>
+      </div>
+      <p class="mt-1 text-sm text-suave">Salão</p>
+      <dl class="mt-3 grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-sm">
+        <dt class="text-suave">Endereço</dt>
+        <dd class="break-all">tesoura.localhost</dd>
+        <dt class="text-suave">Criado em</dt>
+        <dd>05/01/2026</dd>
+      </dl>
+    </li>
+    <li data-salao data-status="ativo" data-busca="studio aurora aurora.localhost" class="rounded-xl border border-borda bg-superficie p-4">
+      <div class="flex items-start justify-between gap-3">
+        <a href="salao.html" class="font-semibold text-primaria underline-offset-4 hover:underline">Studio Aurora</a>
+        <span class="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold bg-[#DCFCE7] text-[#14532D]">Ativo</span>
+      </div>
+      <p class="mt-1 text-sm text-suave">Salão</p>
+      <dl class="mt-3 grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-sm">
+        <dt class="text-suave">Endereço</dt>
+        <dd class="break-all">aurora.localhost</dd>
+        <dt class="text-suave">Criado em</dt>
+        <dd>12/01/2026</dd>
+      </dl>
+    </li>
+  </ul>
+
+  <div class="mt-4 rounded-xl border border-dashed border-borda p-6 text-center" data-vazio hidden>
+    <p class="font-semibold">Nenhum salão corresponde à busca.</p>
+    <a href="#" data-limpar-filtros class="inline-flex min-h-11 items-center text-sm font-semibold text-primaria underline-offset-4 hover:underline mt-4 justify-center">Limpar filtros</a>
+  </div>
+</div>
+</main>
+</body>
+</html>

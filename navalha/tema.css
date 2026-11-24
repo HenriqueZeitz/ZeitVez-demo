@@ -1,0 +1,50 @@
+/* Barbearia Navalha — Tema escuro · dourado · condensada.
+   Este bloco é o "tema" do tenant: o layout é o mesmo para todos, só estas variáveis mudam. */
+:root {
+  --fonte-titulo: 'Oswald', 'Arial Narrow', sans-serif;
+  --fonte-corpo: 'Barlow', system-ui, sans-serif;
+  --esquema: dark;
+  --cor-fundo: #0E0E10;
+  --cor-superficie: #17171A;
+  --cor-superficie-2: #202024;
+  --cor-campo: #121214;
+  --cor-texto: #F2EEE6;
+  --cor-texto-suave: #A9A39A;
+  --cor-borda: #2C2C31;
+  --cor-borda-forte: #45454C;
+  --cor-primaria: #D6A548;
+  --cor-primaria-forte: #D6A548;
+  --cor-primaria-suave: #393122;
+  --cor-sobre-primaria: #1B150B;
+  --cor-secundaria: #9E3B2F;
+  --cor-foco: #D6A548;
+  --cor-foto-1: #3A3A40;
+  --cor-foto-2: #1C1C20;
+  --cor-foto-3: #54452C;
+  --cor-foto-texto: #F2EEE6;
+  --cor-sucesso-fundo: #11301E;
+  --cor-sucesso-texto: #86DFAA;
+  --cor-sucesso-borda: #1F4F33;
+  --cor-alerta-fundo: #33280F;
+  --cor-alerta-texto: #F2C66B;
+  --cor-alerta-borda: #5A4516;
+  --cor-erro-fundo: #3A1614;
+  --cor-erro-texto: #F7A196;
+  --cor-erro-borda: #62261F;
+  --cor-azul-fundo: #13233F;
+  --cor-azul-texto: #93B9F5;
+  --cor-azul-borda: #24406B;
+  --cor-roxo-fundo: #2A1A40;
+  --cor-roxo-texto: #C9A8F5;
+  --cor-roxo-borda: #4A2E70;
+  --titulo-caixa: uppercase;
+  --titulo-espaco: .03em;
+  --titulo-peso: 600;
+  --botao-caixa: uppercase;
+  --botao-espaco: .06em;
+  --raio: 4px;
+  --raio-grande: 6px;
+  --raio-botao: 4px;
+  --raio-avatar: 6px;
+  --sombra: none;
+}

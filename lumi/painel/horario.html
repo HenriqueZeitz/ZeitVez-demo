@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Horário · Painel · Espaço Lumi</title>
+  <link rel="stylesheet" href="../../assets/fontes.css">
+  <link rel="stylesheet" href="../tema.css">
+  <link rel="stylesheet" href="../../assets/vitrine.css">
+  <script defer src="../../assets/telas.js"></script>
+  <script defer src="../../assets/app.js"></script>
+</head>
+<body class="min-h-screen bg-fundo font-corpo text-texto antialiased" data-raiz="../../">
+<a href="#conteudo" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:rounded-tema focus:bg-superficie focus:px-3 focus:py-2">Pular para o conteúdo</a>
+<div class="flex min-h-screen flex-col lg:flex-row">
+  <aside class="border-b border-borda bg-superficie px-4 py-4 lg:sticky lg:top-0 lg:h-screen lg:w-64 lg:shrink-0 lg:self-start lg:overflow-y-auto lg:border-b-0 lg:border-r">
+    <div class="flex items-center gap-3 px-1 lg:px-2">
+      <span class="monograma">E</span>
+      <div class="min-w-0">
+        <p class="titulo truncate text-lg leading-tight">Espaço Lumi</p>
+        <p class="text-xs text-suave">Painel do estabelecimento</p>
+      </div>
+    </div>
+    <div class="mt-4 lg:mt-6">
+      <nav aria-label="Painel" class="flex flex-wrap gap-1 lg:flex-col">
+        <a href="agenda.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Agenda</a>
+        <a href="bloqueios.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Bloqueios</a>
+        <a href="site.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Meu site</a>
+        <a href="servicos.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Serviços</a>
+        <a href="equipe.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Equipe</a>
+        <a href="horario.html" aria-current="page" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none bg-primaria-suave text-texto">Horário</a>
+        <a href="aparencia.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Aparência</a>
+        <a href="regras.html" class="inline-flex min-h-11 items-center rounded-tema px-3 py-2.5 text-sm font-semibold outline-none text-suave hover:bg-superficie-2 hover:text-texto">Regras de agendamento</a>
+      </nav>
+    </div>
+    <div class="mt-4 flex flex-wrap items-center gap-2 border-t border-borda pt-4 lg:flex-col lg:items-stretch">
+      <a href="../index.html" class="inline-flex min-h-11 items-center gap-2 rounded-tema px-3 text-sm font-semibold text-suave hover:bg-superficie-2 hover:text-texto"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/></svg> Ver meu site</a>
+      <a href="../index.html" class="inline-flex min-h-11 items-center gap-2 rounded-tema px-3 text-sm font-semibold text-suave hover:bg-superficie-2 hover:text-texto"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h10"/></svg> Sair</a>
+    </div>
+  </aside>
+
+  <main id="conteudo" tabindex="-1" class="min-w-0 flex-1 px-4 pb-20 pt-6 outline-none sm:px-8 sm:pt-8">
+    <div class="mx-auto max-w-3xl">
+
+    <header class="mb-6">
+      <h1 class="titulo text-3xl sm:text-4xl">Horário</h1>
+      <p class="mt-1 text-suave">Os dias e horários em que o salão atende. Marque “Fechado” nos dias sem atendimento.</p>
+    </header>
+    <div class="cartao p-5 sm:p-7"><form class="space-y-6" action="horario.html" data-ir="horario.html" novalidate>
+
+        <ul class="divide-y divide-borda rounded-xl border border-borda">
+          <li>
+          <div class="space-y-2 p-4">
+            <div class="flex flex-wrap items-center justify-between gap-x-6 gap-y-3">
+              <label for="fechado-1" class="flex min-h-11 min-w-40 cursor-pointer items-center gap-3">
+                <input id="fechado-1" type="checkbox" name="fechado-1" class="caixa-marcar">
+                <span><span class="block font-semibold">Segunda-feira</span><span class="block text-sm font-normal text-suave">Fechado</span></span>
+              </label>
+              <div class="grid w-full grid-cols-2 gap-3 sm:w-auto sm:min-w-72">
+                <div class="space-y-1"><label class="text-sm font-semibold" for="abre-1">Abre</label><input class="campo" id="abre-1" name="abre-1" type="time" value="09:00"></div>
+                <div class="space-y-1"><label class="text-sm font-semibold" for="fecha-1">Fecha</label><input class="campo" id="fecha-1" name="fecha-1" type="time" value="19:00"></div>
+              </div>
+            </div>
+          </div>
+        </li>
+          <li>
+          <div class="space-y-2 p-4">
+            <div class="flex flex-wrap items-center justify-between gap-x-6 gap-y-3">
+              <label for="fechado-2" class="flex min-h-11 min-w-40 cursor-pointer items-center gap-3">
+                <input id="fechado-2" type="checkbox" name="fechado-2" class="caixa-marcar">
+                <span><span class="block font-semibold">Terça-feira</span><span class="block text-sm font-normal text-suave">Fechado</span></span>
+              </label>
+              <div class="grid w-full grid-cols-2 gap-3 sm:w-auto sm:min-w-72">
+                <div class="space-y-1"><label class="text-sm font-semibold" for="abre-2">Abre</label><input class="campo" id="abre-2" name="abre-2" type="time" value="09:00"></div>
+                <div class="space-y-1"><label class="text-sm font-semibold" for="fecha-2">Fecha</label><input class="campo" id="fecha-2" name="fecha-2" type="time" value="19:00"></div>
+              </div>
+            </div>
+          </div>
+        </li>
+          <li>
+          <div class="space-y-2 p-4">
+            <div class="flex flex-wrap items-center justify-between gap-x-6 gap-y-3">
+              <label for="fechado-3" class="flex min-h-11 min-w-40 cursor-pointer items-center gap-3">
+                <input id="fechado-3" type="checkbox" name="fechado-3" class="caixa-marcar">
+                <span><span class="block font-semibold">Quarta-feira</span><span class="block text-sm font-normal text-suave">Fechado</span></span>
+              </label>
+              <div class="grid w-full grid-cols-2 gap-3 sm:w-auto sm:min-w-72">
+                <div class="space-y-1"><label class="text-sm font-semibold" for="abre-3">Abre</label><input class="campo" id="abre-3" name="abre-3" type="time" value="09:00"></div>
+                <div class="space-y-1"><label class="text-sm font-semibold" for="fecha-3">Fecha</label><input class="campo" id="fecha-3" name="fecha-3" type="time" value="19:00"></div>
+              </div>
+            </div>
+          </div>
+        </li>
+          <li>
+          <div class="space-y-2 p-4">
+            <div class="flex flex-wrap items-center justify-between gap-x-6 gap-y-3">
+              <label for="fechado-4" class="flex min-h-11 min-w-40 cursor-pointer items-center gap-3">
+                <input id="fechado-4" type="checkbox" name="fechado-4" class="caixa-marcar">
+                <span><span class="block font-semibold">Quinta-feira</span><span class="block text-sm font-normal text-suave">Fechado</span></span>
+              </label>
+              <div class="grid w-full grid-cols-2 gap-3 sm:w-auto sm:min-w-72">
+                <div class="space-y-1"><label class="text-sm font-semibold" for="abre-4">Abre</label><input class="campo" id="abre-4" name="abre-4" type="time" value="09:00"></div>
+                <div class="space-y-1"><label class="text-sm font-semibold" for="fecha-4">Fecha</label><input class="campo" id="fecha-4" name="fecha-4" type="time" value="19:00"></div>
+              </div>
+            </div>
+          </div>
+        </li>
+          <li>
+          <div class="space-y-2 p-4">
+            <div class="flex flex-wrap items-center justify-between gap-x-6 gap-y-3">
+              <label for="fechado-5" class="flex min-h-11 min-w-40 cursor-pointer items-center gap-3">
+                <input id="fechado-5" type="checkbox" name="fechado-5" class="caixa-marcar">
+                <span><span class="block font-semibold">Sexta-feira</span><span class="block text-sm font-normal text-suave">Fechado</span></span>
+              </label>
+              <div class="grid w-full grid-cols-2 gap-3 sm:w-auto sm:min-w-72">
+                <div class="space-y-1"><label class="text-sm font-semibold" for="abre-5">Abre</label><input class="campo" id="abre-5" name="abre-5" type="time" value="09:00"></div>
+                <div class="space-y-1"><label class="text-sm font-semibold" for="fecha-5">Fecha</label><input class="campo" id="fecha-5" name="fecha-5" type="time" value="19:00"></div>
+              </div>
+            </div>
+          </div>
+        </li>
+          <li>
+          <div class="space-y-2 p-4">
+            <div class="flex flex-wrap items-center justify-between gap-x-6 gap-y-3">
+              <label for="fechado-6" class="flex min-h-11 min-w-40 cursor-pointer items-center gap-3">
+                <input id="fechado-6" type="checkbox" name="fechado-6" class="caixa-marcar">
+                <span><span class="block font-semibold">Sábado</span><span class="block text-sm font-normal text-suave">Fechado</span></span>
+              </label>
+              <div class="grid w-full grid-cols-2 gap-3 sm:w-auto sm:min-w-72">
+                <div class="space-y-1"><label class="text-sm font-semibold" for="abre-6">Abre</label><input class="campo" id="abre-6" name="abre-6" type="time" value="09:00"></div>
+                <div class="space-y-1"><label class="text-sm font-semibold" for="fecha-6">Fecha</label><input class="campo" id="fecha-6" name="fecha-6" type="time" value="15:00"></div>
+              </div>
+            </div>
+          </div>
+        </li>
+          <li>
+          <div class="space-y-2 p-4">
+            <div class="flex flex-wrap items-center justify-between gap-x-6 gap-y-3">
+              <label for="fechado-0" class="flex min-h-11 min-w-40 cursor-pointer items-center gap-3">
+                <input id="fechado-0" type="checkbox" name="fechado-0" class="caixa-marcar" checked>
+                <span><span class="block font-semibold">Domingo</span><span class="block text-sm font-normal text-suave">Fechado</span></span>
+              </label>
+              <div class="grid w-full grid-cols-2 gap-3 sm:w-auto sm:min-w-72">
+                <div class="space-y-1"><label class="text-sm font-semibold" for="abre-0">Abre</label><input class="campo" id="abre-0" name="abre-0" type="time"></div>
+                <div class="space-y-1"><label class="text-sm font-semibold" for="fecha-0">Fecha</label><input class="campo" id="fecha-0" name="fecha-0" type="time"></div>
+              </div>
+            </div>
+          </div>
+        </li>
+        </ul>
+        <button type="submit" class="btn btn-primario">Salvar horário</button>
+      </form></div>
+    </div>
+  </main>
+</div>
+</body>
+</html>
